@@ -34,7 +34,8 @@ select{font-family:inherit;font-size:15px;color:var(--ink);background:var(--card
 .hero h1{margin:0;font-size:clamp(32px,4.4vw,50px);font-weight:800;line-height:1.04;letter-spacing:-.025em}
 .mark{background:linear-gradient(transparent 55%,var(--highlight) 55%)}
 .hero .meta{font-size:14px;color:var(--muted)}
-.hero .overview{font-size:18px;line-height:1.6;color:var(--body);padding-top:14px;border-top:1.5px solid var(--rule)}
+.hero .overview{font-size:18px;line-height:1.6;font-weight:500;color:var(--ink);padding-top:14px;border-top:1.5px solid var(--rule)}
+.hero .overview .note{font-size:inherit;line-height:inherit;color:inherit;font-weight:inherit}
 .hero .overview b{color:var(--brand)}
 .hero .photo{background-size:cover;background-position:50% 35%;background-color:var(--brand);min-height:360px}
 .edittag{display:inline-flex;align-items:center;font-size:11px;font-weight:700;letter-spacing:.04em;color:var(--takeLabel);background:var(--takeBg);padding:2px 9px;border-radius:99px;margin-right:6px;vertical-align:middle;white-space:nowrap}
@@ -53,8 +54,12 @@ mark.usrhl{background:linear-gradient(transparent 55%,var(--highlight) 55%);colo
 .pill{display:inline-flex;font-size:13px;font-weight:700;background:var(--pillBg);color:var(--brand);padding:6px 12px;border-radius:99px;white-space:nowrap}
 .pill.accent{background:var(--accent);color:#fff}
 .hlgrid{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:10px;margin-top:16px}
-.hltile{background:var(--tile);border-radius:16px;padding:18px 20px;font-size:16px;line-height:1.55;color:var(--body);display:flex;gap:8px;align-items:flex-start}
-.hltile .txt{flex:1}
+.hltile{background:var(--tile);border-radius:16px;padding:18px 20px;font-size:16px;line-height:1.55;font-weight:600;color:var(--ink);display:flex;gap:8px;align-items:flex-start}
+.hltile .txt{flex:1;font-size:inherit;line-height:inherit;color:inherit;font-weight:inherit}
+.spark{display:inline-block;vertical-align:middle;width:72px;height:22px;overflow:visible}
+.spark polyline{fill:none;stroke:var(--brand);stroke-width:2;stroke-linecap:round;stroke-linejoin:round}
+.spark circle{fill:var(--brand)}
+.spark .nodata{font-size:10px;fill:var(--faint)}
 .hltile b{color:var(--ink);background:linear-gradient(transparent 55%,var(--highlight) 55%)}
 .hltile .x{min-height:28px;min-width:28px;border:0;background:transparent;color:var(--faint);font-size:18px;cursor:pointer;line-height:1}
 .next{margin:0 56px 20px;background:var(--brand);color:#fff;border-radius:28px;padding:36px 48px;display:flex;flex-direction:column;gap:10px}
