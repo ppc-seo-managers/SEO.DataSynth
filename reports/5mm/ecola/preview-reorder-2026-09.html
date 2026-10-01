@@ -1,0 +1,788 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta name="robots" content="noindex, nofollow, noarchive, noimageindex">
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<title>PREVIEW · Ecola — reordered sections + trend visuals</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link href="https://fonts.googleapis.com/css2?family=Bricolage+Grotesque:opsz,wght@12..96,500;12..96,700;12..96,800&family=Hanken+Grotesk:wght@400;500;600;700&display=swap" rel="stylesheet">
+<style>
+:root{
+box-sizing:border-box;
+padding-top:env(safe-area-inset-top,0px);
+padding-bottom:env(safe-area-inset-bottom,0px);
+--page:#f4f5f8;--card:#ffffff;--tile:#f8f9fb;
+--ink:#23252b;--body:#3b3e46;--muted:#6c6f78;--faint:#8a8d95;
+--rule:#e8eaef;--tileBorder:#e6e8ee;
+--brand:#25408a;--brandInk:#1c2f63;--accent:#f05b22;--highlight:#fdc4a6;
+--takeBg:#fff3ec;--takeLabel:#c2410c;--takeDash:#f7a47f;
+--pillBg:#e8ecf6;
+--pos:#2c7a4b;--neg:#b3412e;--neutral:#6b7280;
+--dark:#191a1c;--onDark:#ffffff;--onDarkMute:#c7c9ce;
+}
+@media (prefers-color-scheme:dark){:root:not([data-theme="light"]){
+--page:#131315;--card:#1d1e21;--tile:#232427;
+--ink:#eceded;--body:#d6d7da;--muted:#a3a7ad;--faint:#8a8d95;
+--rule:#313236;--tileBorder:#34353a;
+--brand:#7793d6;--brandInk:#9db0e6;--accent:#ff8f5c;--highlight:#5a3a22;
+--takeBg:#2c2320;--takeLabel:#ff9d6e;--takeDash:#7a4f31;
+--pillBg:#26304a;
+--pos:#4cc9a3;--neg:#e0897a;--neutral:#a3a7ad;
+}}
+:root[data-theme="dark"]{
+--page:#131315;--card:#1d1e21;--tile:#232427;
+--ink:#eceded;--body:#d6d7da;--muted:#a3a7ad;--faint:#8a8d95;
+--rule:#313236;--tileBorder:#34353a;
+--brand:#7793d6;--brandInk:#9db0e6;--accent:#ff8f5c;--highlight:#5a3a22;
+--takeBg:#2c2320;--takeLabel:#ff9d6e;--takeDash:#7a4f31;
+--pillBg:#26304a;
+--pos:#4cc9a3;--neg:#e0897a;--neutral:#a3a7ad;
+}
+</style>
+<link rel="stylesheet" href="https://seo.datasynth.solutions/reports/report-1c.css?v=20261001e">
+<meta property="og:title" content="PREVIEW · Ecola — reordered sections + trend visuals">
+<meta property="og:type" content="website">
+<script>
+(function(){ try{ var t = localStorage.getItem('report:theme'); if(t==='light'||t==='dark') document.documentElement.setAttribute('data-theme', t); }catch(e){} })();
+</script>
+<style>
+.pvbanner{background:#fff3ec;color:#7a2e0c;border-bottom:2px solid var(--accent);padding:12px 24px;font:500 14px/1.5 "Hanken Grotesk",sans-serif}
+.pvbanner a{color:inherit}
+.illus{display:inline-block;background:#fde68a;color:#6b4a00;font:600 11px/1 "Hanken Grotesk",sans-serif;letter-spacing:.04em;text-transform:uppercase;padding:4px 8px;border-radius:999px;vertical-align:middle;margin-left:6px}
+.real{display:inline-block;background:#d1fae5;color:#065f46;font:600 11px/1 "Hanken Grotesk",sans-serif;letter-spacing:.04em;text-transform:uppercase;padding:4px 8px;border-radius:999px;vertical-align:middle;margin-left:6px}
+.ringkpi{display:flex;gap:12px;align-items:center}
+.ring{width:56px;height:56px;flex:none}
+.ring circle{fill:none;stroke-width:5}
+.ring .bg{stroke:var(--rule)}
+.ring .fg{stroke:var(--pos);stroke-linecap:round;transform:rotate(-90deg);transform-origin:50% 50%}
+.ring .mid{stroke:var(--accent)}
+.kpi .spark{display:block;margin-top:6px;width:72px;height:22px}
+.chart{width:100%;height:auto;display:block;margin:4px 0 14px;font:500 11px "Hanken Grotesk",sans-serif}
+.chart .ax{stroke:var(--rule);stroke-width:1}
+.chart text{fill:var(--muted)}
+.chart .ln{fill:none;stroke-width:2;stroke-linejoin:round}
+.chart .ghost{fill:none;stroke:var(--muted);stroke-width:1.5;stroke-dasharray:4 4}
+.chart .area{opacity:.12}
+.legend{display:flex;flex-wrap:wrap;gap:6px 14px;font:500 12px "Hanken Grotesk",sans-serif;color:var(--muted);margin:-6px 0 14px}
+.legend i{display:inline-block;width:10px;height:10px;border-radius:2px;margin-right:6px;vertical-align:-1px}
+.ia{display:grid;grid-template-columns:repeat(3,1fr);gap:12px;margin-top:16px}
+.ia div{background:rgba(255,255,255,.1);border:1px solid rgba(255,255,255,.25);border-radius:14px;padding:12px 14px;font:400 14px/1.5 "Hanken Grotesk",sans-serif;color:#fff}
+@media (max-width:760px){.ia{grid-template-columns:1fr}}
+</style>
+</head>
+<body>
+<div class="bar noprint">
+<strong class="disp bartitle">REPORT BUILDER</strong>
+<select id="month" aria-label="Report month">
+<option>September 2026</option>
+</select>
+<span class="grow"></span>
+<span class="status" id="status">Saved in this browser</span>
+<button class="btn" id="themeBtn" type="button" aria-label="Toggle light/dark mode">Theme: Auto</button>
+<button class="btn" id="viewBtn" aria-pressed="false">Client view</button>
+<button class="btn light" id="clearBtn">Clear notes</button>
+<button class="btn solid" id="pdfBtn">Export PDF</button>
+</div>
+<div class="togglepanel noprint" data-internal-only>
+<span class="lbl">Sections shown to client</span>
+<label class="toggleitem"><input type="checkbox" data-sectoggle="ga4" checked> Traffic &amp; conversions</label>
+<label class="toggleitem"><input type="checkbox" data-sectoggle="gsc" checked> Search Console</label>
+<label class="toggleitem"><input type="checkbox" data-sectoggle="semrush" checked> Keywords</label>
+<label class="toggleitem"><input type="checkbox" data-sectoggle="ai" checked> AI answer visibility</label>
+<label class="toggleitem"><input type="checkbox" data-sectoggle="local" checked> Local &amp; reputation</label>
+<label class="toggleitem"><input type="checkbox" data-sectoggle="clickup" checked> Work completed</label>
+<label class="toggleitem"><input type="checkbox" data-sectoggle="authority" checked> Authority &amp; site health</label>
+<label class="toggleitem"><input type="checkbox" data-sectoggle="trends" checked> Trendline preview</label>
+</div>
+<div class="internalbar noprint">
+<span>Internal view · <span id="missingCount">0</span> fields need attention before publishing</span>
+<span>Click any dashed field to edit it · select text for B / I / highlighter (or ⌘B, ⌘I, ⌘H) · notes save in this browser</span>
+</div>
+<div class="pvbanner noprint"><b>PREVIEW</b> &mdash; not the live report. Shows (1) the reordered flow Overview &rarr; Highlights &rarr; Work Completed &rarr; Next steps &rarr; data, (2) a new <a href="#authority">Authority &amp; Site Health</a> section with real Semrush numbers, (3) <a href="#trends">what trendlines will look like</a>, (4) design tweaks from the examples (score rings, ranking-distribution bars, sparkline tiles, insight&rarr;action pairs). Anything tagged <span class="illus">illustrative</span> is made-up shape data, not Ecola&rsquo;s.</div>
+<div class="wrap">
+<header class="hdr">
+<img class="clientlogo" src="https://seo.datasynth.solutions/reports/5mm/ecola/ecola-logo.webp" alt="Ecola Termite &amp; Pest Control">
+<div class="right">
+<div class="period"><span class="monthLabel">September 2026</span></div>
+<div class="partnerchip"><img src="https://seo.datasynth.solutions/reports/5mm/5mm-logo.webp" alt="5 Mile Media"></div>
+</div>
+</header>
+<section class="card hero">
+<div class="left">
+<div class="eyebrow">Monthly SEO report · <span class="monthLabel">September 2026</span></div>
+<h1 class="disp">Ecola Termite &amp; Pest Control</h1>
+<div class="meta">ecolatermite.com · Prepared by 5 Mile Media · Data through Sep 27–29, 2026</div>
+<div class="overview"><b>Overview.</b> <span class="edittag" data-internal-only>✎ editable</span><span class="note editme" contenteditable="true" data-k="summary" data-ph="Two or three sentences on what happened this month and what it means.">We&rsquo;re excited to launch our new SEO report this month &ndash; along with a new local solution that has helped us increase your citations by almost 250% in some service areas. Your site is getting a great mix of SEO traffic, including a lot of sessions from Bluebook and Angie&rsquo;s List. And although phone call conversions are down, traffic and visibility both improved over August.</span></div>
+</div>
+<div class="photo" style="background-image:url('https://seo.datasynth.solutions/reports/5mm/ecola/hero-1600.webp')"></div>
+</section>
+<section class="card">
+<div class="cardpad">
+<div class="hlhead">
+<span class="pill accent">This month</span>
+<h2 class="disp hltitle"><span class="mark">Highlights</span></h2>
+</div>
+<div class="hlgrid" id="hls"></div>
+<button class="btn noprint" data-internal-only id="addHl" style="border-color:var(--ink);color:var(--ink);min-height:36px;margin-top:12px;padding:0 14px">+ Add a highlight</button>
+</div>
+</section>
+<section class="card page" data-mod="clickup">
+<div class="sec">
+<div class="sechead">
+<span class="pill">01 · ClickUp</span>
+<span class="edittag" data-internal-only>✎ editable heading</span>
+</div>
+<h2 class="disp sectitle editme" contenteditable="true" data-k="title:clickup">Work Completed</h2>
+<div class="disp dispSub editme" contenteditable="true" data-k="head:clickup">All 10 tasks <span class="mark">completed</span>.</div>
+<div class="kpis"><div class="kpi"><div class="lab">Tasks completed</div><div class="val disp">10</div><div class="delta up">of 10 planned</div></div><div class="kpi"><div class="lab">Pages refreshed</div><div class="val disp">7</div><div class="delta flat">+ 35 pages relinked</div></div><div class="kpi"><div class="lab">Locations optimized</div><div class="val disp">6</div><div class="delta flat">GBP + listings</div></div><div class="kpi"><div class="lab">Site health (ClickUp note)</div><div class="val disp">98%</div><div class="delta up">from 92%</div></div></div>
+<div style="display:flex;flex-direction:column;gap:8px" id="cuwork"></div>
+<div class="take" data-take="clickup">
+<div class="takehead">
+<span class="takelabel">Summary</span>
+<span class="noprint takeactions" data-internal-only><span class="saymsg" data-say="clickup"></span><button class="pull" data-star="clickup">Pull into highlights ↑</button></span>
+</div>
+<div class="takebody" data-takebody="clickup"></div>
+<textarea data-internal-only data-take-input="clickup" placeholder="Anything worth calling out about the work itself.">On-Page &amp; Links: Improved internal linking across 35 pages, added a mosquito optimization, and placed a &quot;Preferred Sources&quot; footer trust badge.</textarea>
+</div>
+</div>
+</section>
+<section class="next page">
+<span class="pill">Next steps</span> <span class="illus">preview: insight → action pairs</span>
+<span class="edittag" data-internal-only>✎ editable</span>
+<div class="body18 note editme" contenteditable="true" data-k="next" data-ph="What we are doing next month, in plain language.">October priorities include executing the Q4 LLM content plan (starting with the cockroach service page rebuild), connecting social properties in GSC, finalizing regional GBP payment attributes, launching the HOA pest management page, and setting up Semrush keyword tracking.</div>
+<div class="ia"><div><b>Insight</b> No-tenting and DIY-alternative queries led September&rsquo;s click gains.<br><b>Action</b> Cockroach service page rebuild first in the Q4 LLM content plan.</div><div><b>Insight</b> 3 of 5 tracked keywords on page one; &ldquo;pest control los angeles&rdquo; not in the top 100.<br><b>Action</b> Launch the HOA pest-management page and connect social properties in GSC.</div><div><b>Insight</b> Listings 82% accurate; Orcutt answers 3% of reviews.<br><b>Action</b> Finish regional GBP payment attributes; review-response push for Orcutt.</div></div>
+</section>
+<section class="card page" data-mod="ga4">
+<div class="sec">
+<div class="sechead">
+<span class="pill">02 · Google Analytics 4</span>
+<span class="secsrcstatus" data-internal-only>● GA4 · through Sep 27–29</span>
+<span class="edittag" data-internal-only>✎ editable headline</span>
+</div>
+<h2 class="disp sectitle">Traffic &amp; Conversions</h2>
+<div class="disp dispSub editme" contenteditable="true" data-k="head:ga4">Bluebook &amp; Angie&rsquo;s List made up <span class="mark">35% of site traffic</span>.</div>
+<div class="kpis">
+<div class="kpi"><div class="lab">Organic search sessions</div><div class="val disp">1,875</div><div class="delta flat">−0.1% vs Aug</div></div>
+<div class="kpi"><div class="lab">Organic engaged sessions</div><div class="val disp">1,362</div><div class="delta down">−3.4%</div></div>
+<div class="kpi"><div class="lab">Organic engagement rate</div><div class="val disp">72.6%</div><div class="delta down">−2.5 pt</div></div>
+<div class="kpi"><div class="lab">Phone clicks (site, all channels)</div><div class="val disp">405</div><div class="delta down">−18.0%</div></div>
+</div>
+<div class="barstitle">Sessions by channel</div>
+<div class="bars" id="ga4bars"></div>
+<div class="barstitle" style="margin-top:4px">Paid vs. organic</div>
+<div class="bars">
+<div class="barrow"><span class="lbl">Paid search</span><span class="track"><span class="fill paid" style="width:17.7%"></span></span><span class="v">2,422 · 17.7%</span></div>
+<div class="barrow"><span class="lbl">Organic (search + shopping)</span><span class="track"><span class="fill" style="width:17.0%"></span></span><span class="v">2,324 · 17.0%</span></div>
+<div class="barrow"><span class="lbl">Other (direct, referral, unassigned, display)</span><span class="track"><span class="fill" style="width:65.3%;background:var(--muted)"></span></span><span class="v">8,937 · 65.3%</span></div>
+</div>
+<div class="asides" data-internal-only><span class="asidelabel">Analyst notes &middot; partner view only</span>
+<p class="aside">SEO-focused traffic read: organic search + organic shopping combined for 2,324 sessions — 17.0% of the 13,683-session total — just behind paid search's 2,422 (17.7%), roughly 1:1 parity between paid and organic acquisition this month. Direct (1,839, 13.4%) and referral (1,768, 12.9%) are the next largest clean channels. Unassigned is the single largest bucket (4,967, 36.3%) but is inflated by the one-day Singapore/&quot;thebluebook&quot; spike, not a real earned-traffic gain.</p>
+<p class="aside">12-month trend chart starts next month, once there is a prior period to plot.</p>
+<p class="aside">A one-day traffic spike from Singapore and the referral source &quot;thebluebook&quot; inflated the comparison period&rsquo;s site-wide total (not organic). KPIs above are the Organic Search channel only, which is not affected.</p>
+</div>
+<div class="take" data-take="ga4">
+<div class="takehead">
+<span class="takelabel">Summary</span>
+<span class="noprint takeactions" data-internal-only><span class="saymsg" data-say="ga4"></span><button class="pull" data-star="ga4">Pull into highlights ↑</button></span>
+</div>
+<div class="takebody" data-takebody="ga4"></div>
+<textarea data-internal-only data-take-input="ga4" placeholder="What do you want them to take from the traffic numbers?">Bluebook &amp; Angie&rsquo;s List made up 35% of site traffic in September!</textarea>
+</div>
+</div>
+</section>
+<section class="card page" data-mod="gsc">
+<div class="sec">
+<div class="sechead">
+<span class="pill">03 · Google Search Console</span>
+<span class="secsrcstatus" data-internal-only>● GSC · through Sep 27–29</span>
+<span class="edittag" data-internal-only>✎ editable headline</span>
+</div>
+<h2 class="disp sectitle">Google Search</h2>
+<div class="disp dispSub editme" contenteditable="true" data-k="head:gsc"><span class="mark">Eco-friendly terms</span> grew impressions across regional sub-markets.</div>
+<div class="kpis">
+<div class="kpi"><div class="lab">Clicks</div><div class="val disp">1,330</div><div class="delta up">+0.8% vs Aug</div></div>
+<div class="kpi"><div class="lab">Impressions</div><div class="val disp">169K</div><div class="delta down">−11.1%</div></div>
+<div class="kpi"><div class="lab">CTR</div><div class="val disp">0.8%</div><div class="delta up">+0.1 pt</div></div>
+<div class="kpi"><div class="lab">Avg position</div><div class="val disp">12.9</div><div class="delta up">−3.1 (better)</div></div>
+</div>
+<div class="tblwrap">
+<div class="tbltitle">Queries that moved — top gainers (Sep 1–27 vs Aug 1–27)</div>
+<div style="overflow-x:auto"><table class="dt" id="gsctable"></table></div>
+</div>
+<div class="asides" data-internal-only><span class="asidelabel">Analyst notes &middot; partner view only</span>
+<p class="aside">12-month trend chart starts next month, once there is a prior period to plot.</p>
+<p class="aside">Ranked by real GSC compare deltas (live pull, 2026-09-30); rows outside the top clicks gainers are omitted so the module can focus on what&rsquo;s working, per Russ&rsquo;s note.</p>
+</div>
+<div class="take" data-take="gsc">
+<div class="takehead">
+<span class="takelabel">Summary</span>
+<span class="noprint takeactions" data-internal-only><span class="saymsg" data-say="gsc"></span><button class="pull" data-star="gsc">Pull into highlights ↑</button></span>
+</div>
+<div class="takebody" data-takebody="gsc"></div>
+<textarea data-internal-only data-take-input="gsc" placeholder="Which queries or pages matter this month, and why?">No-tenting and DIY-alternative queries led September&rsquo;s clicks gains: &ldquo;termite treatment without tenting&rdquo; doubled (5→10 clicks, impressions 201→290) and &ldquo;what repels termites&rdquo; impressions nearly quadrupled (335→1,130). Branded search also grew &mdash; &ldquo;ecola termite and pest control&rdquo; +6 clicks (33%) and &ldquo;ecola pest&rdquo; +5 clicks (100%).</textarea>
+</div>
+</div>
+</section>
+<section class="card page" data-mod="semrush">
+<div class="sec">
+<div class="sechead">
+<span class="pill">04 · Semrush</span>
+<span class="secsrcstatus" data-internal-only>● Semrush · 5 keywords · daily since Sep 30</span>
+<span class="edittag" data-internal-only>✎ editable heading</span>
+</div>
+<h2 class="disp sectitle editme" contenteditable="true" data-k="title:semrush">Keywords</h2>
+<div class="disp dispSub editme" contenteditable="true" data-k="head:semrush">Keyword tracking is live: <span class="mark">3 of 5 keywords on page one</span>, two of them in the top 3.</div>
+<div class="kpis">
+<div class="kpi"><div class="lab">Keywords tracked</div><div class="val disp">5</div><div class="delta flat">mobile · United States</div></div>
+<div class="kpi"><div class="lab">In the top 3</div><div class="val disp">2</div><div class="delta flat">baseline</div></div>
+<div class="kpi"><div class="lab">On page one</div><div class="val disp">3</div><div class="delta flat">baseline</div></div>
+<div class="kpi"><div class="lab">Visibility</div><div class="val disp">29.0%</div><div class="delta flat">baseline</div></div>
+</div>
+<div class="tblwrap">
+<div class="tbltitle">Current month keywords — Google rankings as of Oct 1, 2026 · daily history since Sep 30</div>
+<div style="overflow-x:auto"><table class="dt" id="keywordstable"></table></div>
+</div>
+<div class="asides" data-internal-only><span class="asidelabel">Analyst notes &middot; partner view only</span>
+<p class="aside">Rank tracking started Sep 30, so this is the baseline and the History column has two daily checks (Sep 30, Oct 1). Semrush records a position every day from the day a campaign is created and cannot backfill earlier dates, so the history line grows with each report (a full month of daily points by the October report) and the vs-last-month arrows start then.</p>
+</div>
+<div class="take" data-take="semrush">
+<div class="takehead">
+<span class="takelabel">Summary</span>
+<span class="noprint takeactions" data-internal-only><span class="saymsg" data-say="semrush"></span><button class="pull" data-star="semrush">Pull into highlights ↑</button></span>
+</div>
+<div class="takebody" data-takebody="semrush"></div>
+<textarea data-internal-only data-take-input="semrush" placeholder="What the first month of rank tracking says."></textarea>
+</div>
+</div>
+</section>
+<section class="card page" data-mod="ai">
+<div class="sec">
+<div class="sechead">
+<span class="pill">05 · LLM Refs API</span>
+<span class="secsrcstatus" data-internal-only>● LLM Refs API · refreshed Sep 30</span>
+<span class="edittag" data-internal-only>✎ editable heading</span>
+</div>
+<h2 class="disp sectitle editme" contenteditable="true" data-k="title:ai">AI Visibility</h2>
+<div class="disp dispSub editme" contenteditable="true" data-k="head:ai">A strong share of voice for <span class="mark">eco-friendly keywords</span>.</div>
+<div class="kpis">
+<div class="kpi"><div class="lab">AI keywords tracked</div><div class="val disp">5</div><div class="delta flat">refreshed Sep 30</div></div>
+<div class="kpi"><div class="lab">Ranked in AI answers</div><div class="val disp">4 of 5</div><div class="delta flat">unchanged</div></div>
+<div class="kpi"><div class="lab">Best share of voice</div><div class="val disp">20%</div><div class="delta flat">&ldquo;eco friendly exterminators orange county&rdquo;</div></div>
+</div>
+<div class="tblwrap">
+<div class="tbltitle">Where Ecola shows up in AI answers</div>
+<div style="overflow-x:auto"><table class="dt" id="aitable"></table></div>
+</div>
+<div class="asides" data-internal-only><span class="asidelabel">Analyst notes &middot; partner view only</span>
+<p class="aside">Refreshed 2026-09-30 via the LLM Refs API (previous pull was 2026-09-29, one day earlier) — this is a second snapshot, not a verified month-over-month trend, so no delta arrows are shown. First full monthly trend lands next report.</p>
+</div>
+<div class="take" data-take="ai">
+<div class="takehead">
+<span class="takelabel">Summary</span>
+<span class="noprint takeactions" data-internal-only><span class="saymsg" data-say="ai"></span><button class="pull" data-star="ai">Pull into highlights ↑</button></span>
+</div>
+<div class="takebody" data-takebody="ai"></div>
+<textarea data-internal-only data-take-input="ai" placeholder="What is happening in AI answers, in plain language?">Ecola is showing a strong share of voice for eco-friendly keywords in key service areas.</textarea>
+</div>
+</div>
+</section>
+<section class="card page" data-mod="local">
+<div class="sec">
+<div class="sechead">
+<span class="pill">06 · Google Business Profile · DataSynth</span>
+<span class="secsrcstatus" data-internal-only>● Vendasta · pulled Sep 30</span>
+<span class="edittag" data-internal-only>✎ editable heading</span>
+</div>
+<h2 class="disp sectitle editme" contenteditable="true" data-k="title:local">Local Search</h2>
+<div class="disp dispSub editme" contenteditable="true" data-k="head:local">Local citations are <span class="mark">up 80–250%</span> in September.</div>
+<div class="kpis">
+<div class="kpi"><div class="lab">Google reviews (all locations)</div><div class="val disp">1,361</div><div class="delta flat">5 of 6 locations</div></div>
+<div class="kpi"><div class="lab">Average Google rating</div><div class="val disp">4.6</div><div class="delta flat">weighted by review count</div></div>
+<div class="kpi"><div class="lab">Listings accurate</div><div class="val disp">82%</div><div class="delta flat">127 of 155 checked</div></div>
+<div class="kpi"><div class="lab">Locations</div><div class="val disp">6</div><div class="delta flat">baseline month</div></div>
+</div>
+<div class="tblwrap">
+<div class="tbltitle">By location</div>
+<div style="overflow-x:auto"><table class="dt" id="localtable"></table></div>
+</div>
+<div class="asides" data-internal-only><span class="asidelabel">Analyst notes &middot; partner view only</span>
+<p class="aside">First month on this report. Month-over-month changes start next month.</p>
+<p class="aside">Listings accurate = directory listings whose name, address, phone and website match the business record, out of those the directory could be checked on.</p>
+<p class="aside flag">Check before sending: Vendasta&rsquo;s newest stored review for any Ecola location is from 2026-08-12 (ingested 2026-08-13), so September shows 0 new reviews everywhere — likely a review-sync gap, not a real zero. Simi Valley has no Google review source connected. Orcutt responds to 3% of reviews (4 of 117) vs 69–94% elsewhere.</p>
+</div>
+<div class="take" data-take="local">
+<div class="takehead">
+<span class="takelabel">Summary</span>
+<span class="noprint takeactions" data-internal-only><span class="saymsg" data-say="local"></span><button class="pull" data-star="local">Pull into highlights ↑</button></span>
+</div>
+<div class="takebody" data-takebody="local"></div>
+<textarea data-internal-only data-take-input="local" placeholder="What the map grid and reviews say about the month.">Local citations are up 80-250% in September and Listings Score is high above benchmark for all locations.</textarea>
+</div>
+</div>
+</section>
+<section class="card page" data-mod="authority" id="authority">
+<div class="sec">
+<div class="sechead">
+<span class="pill">07 · Semrush Backlinks + Site Audit</span>
+<span class="secsrcstatus" data-internal-only>● Semrush API · pulled Oct 1 · new section (preview)</span>
+</div>
+<h2 class="disp sectitle">Authority &amp; Site Health</h2>
+<div class="disp dispSub">Site health <span class="mark">92 of 100</span> across 1,046 crawled pages; authority steady at 26.</div>
+<div class="kpis">
+<div class="kpi ringkpi"><svg class="ring" viewBox="0 0 48 48" data-ring="26"></svg><div><div class="lab">Authority Score</div><div class="val disp">26</div><div class="delta flat">unchanged since Apr</div></div></div>
+<div class="kpi ringkpi"><svg class="ring" viewBox="0 0 48 48" data-ring="92"></svg><div><div class="lab">Site health</div><div class="val disp">92</div><div class="delta down">−3 vs prior crawl</div></div></div>
+<div class="kpi"><div class="lab">Referring domains</div><div class="val disp">1,005</div><div class="delta down">−51 vs Sep 1 (−4.8%)</div><svg class="spark" id="sp-dom" viewBox="0 0 72 22"></svg></div>
+<div class="kpi"><div class="lab">Backlinks</div><div class="val disp">24,421</div><div class="delta down">−3,712 vs Sep 1 (−13%)</div><svg class="spark" id="sp-bl" viewBox="0 0 72 22"></svg></div>
+</div>
+<div class="barstitle">Referring domains, last 13 months <span class="real">real data</span></div>
+<svg class="chart" id="ch-dom" viewBox="0 0 720 200"></svg>
+<div class="barstitle">Crawl issues (Sep 26 crawl)</div>
+<div class="bars">
+<div class="barrow"><span class="lbl">Errors</span><span class="track"><span class="fill" style="width:1%;background:var(--neg)"></span></span><span class="v">2</span></div>
+<div class="barrow"><span class="lbl">Warnings</span><span class="track"><span class="fill" style="width:5%;background:var(--accent)"></span></span><span class="v">36</span></div>
+<div class="barrow"><span class="lbl">Notices</span><span class="track"><span class="fill" style="width:100%;background:var(--muted)"></span></span><span class="v">733</span></div>
+</div>
+<div class="asides" data-internal-only><span class="asidelabel">Analyst notes &middot; partner view only</span>
+<p class="aside">Source: Semrush <code>backlinks_overview</code> + <code>backlinks_historical</code> (root domain) and Site Audit project 29120969, snapshot 2026-09-26. 58 audit snapshots exist back to 2026-04-02, so a health-score trendline can start immediately.</p>
+<p class="aside flag">Check before sending: the ClickUp maintenance note says site health went 92% → 98%, but Semrush&rsquo;s latest crawl reports 92 (−3). One of the two is stale. Also, referring domains rose 858 → 1,056 Aug→Sep then fell to 1,005, while raw backlinks dropped 28,133 → 24,421 &mdash; usually lost low-value links, worth a sentence if it continues.</p>
+<p class="aside">Cost: the Site Audit <code>snapshot</code> call bills 10,000 API units; the account balance read zero right after it, so the <code>history</code> call (score over time) failed today. Needs a units top-up or a cheaper path before this is monthly.</p>
+</div>
+<div class="take" data-take="authority">
+<div class="takehead"><span class="takelabel">Summary</span><span class="noprint takeactions" data-internal-only><span class="saymsg" data-say="authority"></span><button class="pull" data-star="authority">Pull into highlights ↑</button></span></div>
+<div class="takebody" data-takebody="authority"></div>
+<textarea data-internal-only data-take-input="authority" placeholder="What authority and site health say this month."></textarea>
+</div>
+</div>
+</section>
+<section class="card page" data-mod="trends" id="trends">
+<div class="sec">
+<div class="sechead">
+<span class="pill">Preview · what trendlines will look like</span>
+<span class="illus">illustrative</span>
+</div>
+<h2 class="disp sectitle">Keyword &amp; performance trendlines</h2>
+<div class="disp dispSub">Once Semrush has a month of daily checks, each keyword gets a position line and a <span class="mark">ranking-distribution</span> bar.</div>
+<div class="barstitle">Keyword positions, weekly, 13 weeks <span class="illus">illustrative path &middot; ends at today&rsquo;s real position</span></div>
+<svg class="chart" id="ch-kw" viewBox="0 0 720 240"></svg>
+<div class="legend" id="lg-kw"></div>
+<div class="barstitle">Ranking distribution by week (1–3 · 4–10 · 11–20 · 21–50 · 51+ / not ranked) <span class="illus">illustrative</span></div>
+<svg class="chart" id="ch-dist" viewBox="0 0 720 150"></svg>
+<div class="barstitle">Organic search sessions, 12 months, with prior year <span class="illus">illustrative &middot; ends at Sep&rsquo;s real 1,875</span></div>
+<svg class="chart" id="ch-ga" viewBox="0 0 720 200"></svg>
+<div class="asides" data-internal-only><span class="asidelabel">Analyst notes &middot; partner view only</span>
+<p class="aside">Real sources once live: keyword lines and distribution from Semrush <code>tracking_position_organic</code> (daily since Sep 30, no backfill); sessions from GA4 (12 months exist now, pull via Chrome or Windsor once the property is mapped); GSC clicks/impressions 16 months exist today. These charts are drawn in the page with the same SVG code the History sparklines use &mdash; no library, no images.</p>
+</div>
+</div>
+</section>
+<p class="footer">GA4/GSC through 9/27–29; ClickUp through 9/29; Vendasta reviews and listings pulled 9/30; Semrush rank tracking daily since 9/30 (latest 10/1); LLM Refs re-checked 9/30. Notes save in this browser only. Export PDF opens your print dialog — choose "Save as PDF".</p>
+</div>
+<script>
+(function(){
+var MODS = ['clickup','ga4','gsc','semrush','ai','local','authority','trends'];
+function bars(id, rows){
+var el=document.getElementById(id); if(!el) return;
+var max=Math.max.apply(null,rows.map(function(r){return r[1]}));
+el.innerHTML = rows.map(function(r){
+return '<div class="barrow"><span class="lbl">'+r[0]+'</span><span class="track"><span class="fill" style="width:'+(r[1]/max*100).toFixed(1)+'%"></span></span><span class="v">'+r[2]+'</span></div>';
+}).join('');
+}
+bars('ga4bars',[['Unassigned',4967,'4,967'],['Paid search',2422,'2,422'],['Organic search',1875,'1,875'],['Direct',1839,'1,839'],['Referral',1768,'1,768'],['Organic shopping',449,'449'],['Display',363,'363']]);
+function arrow(delta){
+if (delta > 0) return '<span class="mvUp">▲ +'+delta.toLocaleString()+'</span>';
+if (delta < 0) return '<span class="mvDown">▼ '+delta.toLocaleString()+'</span>';
+return '<span class="flat">–</span>';
+}
+function pct(now, prev){
+if (prev === 0) return now > 0 ? '<span class="mvNew">new</span>' : '–';
+var p = ((now - prev) / prev * 100);
+var s = (p>=0?'+':'') + p.toFixed(0) + '%';
+return '<span class="'+(p>0?'mvUp':p<0?'mvDown':'flat')+'">'+s+'</span>';
+}
+var gscRows = [
+{ q:'ecola termite and pest control', c:24, cp:18, i:185, ip:118 },
+{ q:'termite treatment without tenting', c:10, cp:5, i:290, ip:201 },
+{ q:'ecola pest', c:10, cp:5, i:29, ip:23 },
+{ q:'termite treatment near me', c:4, cp:0, i:139, ip:356 },
+{ q:'venomous spiders in southern california', c:4, cp:1, i:63, ip:49 },
+{ q:'electro gun for termites', c:4, cp:1, i:26, ip:19 },
+{ q:'what repels termites', c:3, cp:0, i:1130, ip:335 },
+{ q:'do termites come out in the heat', c:3, cp:0, i:71, ip:20 }
+];
+function renderGscTable(id, rows){
+var el = document.getElementById(id); if(!el) return;
+el.innerHTML = '<thead><tr><th>Query</th><th class="num">Clicks</th><th class="num">vs Aug</th><th class="num">Impressions</th><th class="num">vs Aug</th></tr></thead><tbody>' +
+rows.map(function(r){
+return '<tr><td>'+r.q+'</td>'+
+'<td class="num">'+r.c+'</td>'+
+'<td class="num">'+arrow(r.c-r.cp)+' <span style="font-size:12px">'+pct(r.c,r.cp)+'</span></td>'+
+'<td class="num">'+r.i.toLocaleString()+'</td>'+
+'<td class="num">'+arrow(r.i-r.ip)+' <span style="font-size:12px">'+pct(r.i,r.ip)+'</span></td>'+
+'</tr>';
+}).join('') + '</tbody>';
+}
+renderGscTable('gsctable', gscRows);
+(function(){
+var el = document.getElementById('keywordstable'); if(!el) return;
+var dates = ['Sep 30','Oct 1'];
+var rows = [
+['eco friendly rodent control services los angeles','1',[1,1],'20.0%','0','/organic-pest-control-los-angeles/'],
+['eco friendly exterminators orange county','3',[3,3],'5.2%','20','/conquering-critters-eco-friendly-pest-control-solutions-for-orange-county-ca/'],
+['termite inspection orange county','5',[5,5],'3.4%','260','/service-areas/termite-and-pest-orange-county/'],
+['termite control southern california','33',[33,33],'0.4%','90','/termites-and-southern-california/'],
+['pest control los angeles','not in top 100',[null,null],'0%','1,900','—']
+];
+function spark(h){
+var pts=h.map(function(v,i){return v==null?null:[i,v]}).filter(Boolean);
+if(!pts.length) return '<svg class="spark" viewBox="0 0 72 22"><text class="nodata" x="0" y="15">not ranked</text></svg>';
+var vals=pts.map(function(p){return p[1]}), lo=Math.min.apply(null,vals), hi=Math.max.apply(null,vals), span=(hi-lo)||1;
+var n=h.length, x=function(i){return n>1?4+i*(64/(n-1)):36}, y=function(v){return 4+((v-lo)/span)*14};
+var line=pts.map(function(p){return x(p[0]).toFixed(1)+','+y(p[1]).toFixed(1)}).join(' ');
+var last=pts[pts.length-1];
+return '<svg class="spark" viewBox="0 0 72 22" aria-label="'+h.map(function(v,i){return dates[i]+': '+(v==null?'not ranked':'#'+v)}).join(', ')+'"><polyline points="'+line+'"/><circle cx="'+x(last[0]).toFixed(1)+'" cy="'+y(last[1]).toFixed(1)+'" r="2.5"/></svg>';
+}
+el.innerHTML = '<thead><tr><th>Keyword</th><th class="num">Position</th><th class="num">vs last month</th><th class="num">History ('+dates[0]+'–'+dates[dates.length-1]+')</th><th class="num">Visibility</th><th class="num">Searches / mo</th><th style="padding-left:20px">Ranking page</th></tr></thead><tbody>' +
+rows.map(function(r){ return '<tr><td>'+r[0]+'</td><td class="num"><b>'+r[1]+'</b></td><td class="num"><span class="flat">baseline</span></td><td class="num">'+spark(r[2])+'</td><td class="num">'+r[3]+'</td><td class="num">'+r[4]+'</td><td class="wrap" style="font-size:13px;word-break:break-all;padding-left:20px">'+r[5]+'</td></tr>'; }).join('') + '</tbody>';
+})();
+(function(){
+var el = document.getElementById('aitable'); if(!el) return;
+var rows = [
+['eco friendly exterminators orange county','5 of 94','20%','3.8'],
+['eco friendly rodent control services los angeles','13 of 107','10%','6.0'],
+['termite inspection orange county','24 of 113','4%','2.0'],
+['termite control southern california','22 of 153','4%','2.0'],
+['pest control los angeles','not ranked (of 111)','—','—']
+];
+el.innerHTML = '<thead><tr><th>Keyword tracked</th><th class="num">Rank / of tracked brands</th><th class="num">Share of voice</th><th class="num">Avg. position</th></tr></thead><tbody>' +
+rows.map(function(r){ return '<tr><td>'+r[0]+'</td><td class="num">'+r[1]+'</td><td class="num">'+r[2]+'</td><td class="num">'+r[3]+'</td></tr>'; }).join('') + '</tbody>';
+})();
+(function(){
+var el = document.getElementById('localtable'); if(!el) return;
+var rows = [
+['Mission Hills','15314 Devonshire St','646','4.6','91%','20 of 27','74%'],
+['Oxnard','3005 Ventura Blvd','271','4.6','94%','19 of 25','76%'],
+['Anaheim','1521 E Lincoln Ave','187','4.7','69%','25 of 27','93%'],
+['San Diego','3555 Pacific Hwy','140','4.6','84%','24 of 28','86%'],
+['Orcutt','3421 Orcutt Rd','117','4.4','3%','17 of 20','85%'],
+['Simi Valley','1736 E Los Angeles Ave','—','—','—','22 of 28','79%']
+];
+el.innerHTML = '<thead><tr><th>Location</th><th class="num">Google reviews</th><th class="num">Rating</th><th class="num">Reviews responded to</th><th class="num">Listings accurate</th><th class="num">Accuracy</th></tr></thead><tbody>' +
+rows.map(function(r){
+return '<tr><td>'+r[0]+'<span class="sub">'+r[1]+'</span></td><td class="num">'+r[2]+'</td><td class="num">'+r[3]+'</td><td class="num">'+r[4]+'</td><td class="num">'+r[5]+'</td><td class="num">'+r[6]+'</td></tr>';
+}).join('') + '</tbody>';
+})();
+function labelTables(){
+document.querySelectorAll('table.dt').forEach(function(t){
+var hs=[].map.call(t.querySelectorAll('thead th'),function(th){return th.textContent.trim()});
+t.querySelectorAll('tbody tr').forEach(function(tr){
+[].forEach.call(tr.children,function(td,i){ if(i===0) td.classList.add('head'); else td.setAttribute('data-label',hs[i]||''); });
+});
+});
+}
+function esc(s){ return (s||'').replace(/&/g,'&amp;').replace(/</g,'&lt;'); }
+function nl2br(s){ return esc(s).trim().replace(/\n+/g,'<br>'); }
+(function(){
+var el = document.getElementById('cuwork'); if(!el) return;
+var rows = [
+{ task:'Maintenance: Site Health, Index, Crawl', type:'Technical', status:'Completed', notes:'Site health: 92% → 98%\nBroken links\nTitle length\nInternal redirects\nMultiple h1s' },
+{ task:'Q4 Content Planning', type:'Content', status:'Completed', notes:'LLM Optimization topics planned for October–December.' },
+{ task:'On-Site Reviews Issues (BirdEye)', type:'Reputation', status:'Completed', notes:'Identified reviews-related issues on the site: "Leave a review" link 404s; BirdEye reviews are 4 years old; all BirdEye reviews appear to be for Los Angeles (Mission Hills), not this location.', doc:'https://docs.google.com/document/d/12OKsmqlIFizqjQKBLEwdoPUsE3cMvh_uhKuH4yraa70/edit?usp=sharing' },
+{ task:'Optimize: Mosquitos', type:'On-page', status:'Completed' },
+{ task:'Internal Linking Update', type:'Links', status:'Completed', notes:'9/10: internal linking improved for 35 pages.' },
+{ task:'Local: GBP, Listings + Optimization', type:'Local', status:'Completed', notes:'All 6 locations optimized; early results tracking now. Still need: payment methods accepted on the GBP listing (Amex, Google Pay, Apple Pay, cash, check, debit, financing, MasterCard, PayPal, Visa, etc).', doc:'https://docs.google.com/document/d/1JySJHuBwNjC1Obw_Pie6jahUQbKRSa5iddv0acmlrrg/edit?usp=sharing' },
+{ task:'Footer: Preferred Source', type:'On-page', status:'Completed', notes:'"Preferred Sources" badge added to the footer.' },
+{ task:'Refresh: 7 pages', type:'Content', status:'Completed', notes:'Pages refreshed: /treatments/orange-oil/, /treatments/ecola-heat/, /treatments/foamprecision-injection/, /8-tips-for-keeping-termite-swarmers-away/, /treatments/electro-gun/, /about-us/meet-the-termite-lady/, /contact-us/' },
+{ task:'Cannibalization: Duplicate Service Area Pages', type:'Technical', status:'Completed', notes:'All /ecolatermite/ subpages redirected to the matching /service-areas/ page.' },
+{ task:'Report', type:'Reporting', status:'Completed', notes:'Organic clicks/impressions +5% m/m, organic traffic +11% m/m, organic conversions +32% m/m, AI citations 583 → 720. 20 new top-3 keywords.', doc:'https://drive.google.com/file/d/16EIgsJyvW8TwJA5Tp4ESFQ_XzcZMJ-B8/view?usp=sharing' }
+];
+el.innerHTML = rows.map(function(r){
+var stclass = r.status === 'Completed' ? 'st-done' : 'st-progress';
+var doc = r.doc ? '<a href="'+esc(r.doc)+'" target="_blank" rel="noopener">Open ↗</a>' : '<span class="none">—</span>';
+var notes = r.notes ? nl2br(r.notes) : '<span class="none">—</span>';
+return '<div class="workrow"><div class="title">'+esc(r.task)+'</div>'+
+'<div><span class="typepill">'+esc(r.type)+'</span></div>'+
+'<div class="stpill '+stclass+'">'+esc(r.status)+'</div>'+
+'<div class="notes">'+notes+'</div>'+
+'<div class="doc">'+doc+'</div></div>';
+}).join('');
+})();
+labelTables();
+var SECKEY = 'report:sections:2026-09';
+function loadSectionState(){
+try { var raw = localStorage.getItem(SECKEY); return raw ? JSON.parse(raw) : {}; } catch(e){ return {}; }
+}
+function saveSectionState(state){
+try { localStorage.setItem(SECKEY, JSON.stringify(state)); } catch(e){}
+}
+function initSectionState(){
+var state = loadSectionState();
+document.querySelectorAll('[data-sectoggle]').forEach(function(cb){
+cb.checked = state[cb.dataset.sectoggle] !== false;
+});
+}
+function applySectionState(){
+var isClient = document.body.classList.contains('client');
+document.querySelectorAll('[data-sectoggle]').forEach(function(cb){
+var mod = cb.dataset.sectoggle;
+var on = cb.checked;
+var card = document.querySelector('[data-mod="'+mod+'"]');
+if(!card) return;
+if (isClient) { card.classList.toggle('off', !on); card.style.opacity = ''; }
+else { card.classList.remove('off'); card.style.opacity = on ? '' : '.45'; }
+});
+}
+document.querySelectorAll('[data-sectoggle]').forEach(function(cb){
+cb.addEventListener('change', function(){
+var state = loadSectionState();
+state[cb.dataset.sectoggle] = cb.checked;
+saveSectionState(state);
+applySectionState();
+});
+});
+var hls = document.getElementById('hls');
+function addHl(html, boldLead){
+var row = document.createElement('div');
+row.className = 'hltile';
+var span = document.createElement('span');
+span.className = 'txt note editme';
+span.setAttribute('contenteditable','true');
+span.setAttribute('data-ph','A win, a number, a thing they should notice.');
+if (html) span.innerHTML = html;
+row.appendChild(span);
+var x = document.createElement('button');
+x.className = 'x noprint';
+x.setAttribute('data-internal-only','');
+x.setAttribute('aria-label','Remove highlight');
+x.textContent = '×';
+x.addEventListener('click', function(){ row.remove(); save(); });
+row.appendChild(x);
+span.addEventListener('input', save);
+hls.appendChild(row);
+return row;
+}
+var defaultHighlights = [
+'Bluebook & Angie’s List made up 35% of site traffic in September!',
+'Queries focused on "without tenting," "orange oil," "electro gun," and "heat treatment vs fumigation" saw strong growth in impressions and clicks.',
+'What went up: no-tenting and DIY-alternative queries led clicks gains this month, plus steady eco-friendly-term growth across Orange County, San Diego and Ventura.',
+'Ecola is showing a strong share of voice for eco-friendly keywords in key service areas.',
+'Local citations are up 80-250% in September and Listings Score is high above benchmark for all locations.',
+'SEO Health: Technical site health score improved from 92% to 98%.',
+'Content Refreshes: Optimized 7 core pages (orange oil, heat treatment, electro gun, swarmers guide, etc.) and mapped out the Q4 LLM content plan.',
+'On-Page & Links: Improved internal linking across 35 pages, added a mosquito optimization, and placed a "Preferred Sources" footer trust badge.'
+];
+document.getElementById('addHl').addEventListener('click', function(){ addHl('').querySelector('.txt').focus(); });
+function say(k, msg){
+var el = document.querySelector('[data-say="'+k+'"]');
+if(!el) return;
+el.textContent = msg;
+clearTimeout(el._t);
+el._t = setTimeout(function(){ el.textContent = ''; }, 3000);
+}
+document.querySelectorAll('[data-star]').forEach(function(btn){
+btn.addEventListener('click', function(){
+var k = btn.dataset.star;
+var ta = document.querySelector('[data-take-input="'+k+'"]');
+var txt = (ta.value||'').trim();
+if(!txt){ say(k, 'Write your note first'); ta.focus(); return; }
+var dupe = false;
+hls.querySelectorAll('.txt').forEach(function(n){ if((n.textContent||'').trim() === txt) dupe = true; });
+if(dupe){ say(k, 'Already in highlights'); return; }
+var row = addHl(txt);
+save();
+row.style.boxShadow = '0 0 0 3px var(--highlight)';
+setTimeout(function(){ row.style.boxShadow = ''; }, 1800);
+say(k, 'Added to highlights');
+});
+});
+function syncTakes(){
+var isClient = document.body.classList.contains('client');
+document.querySelectorAll('[data-take]').forEach(function(box){
+var k = box.dataset.take;
+var ta = box.querySelector('[data-take-input="'+k+'"]');
+var out = box.querySelector('[data-takebody="'+k+'"]');
+var txt = (ta.value || '').trim();
+out.textContent = txt;
+box.classList.toggle('empty', !txt);
+if (isClient) {
+box.classList.toggle('hide', !txt);
+} else {
+box.classList.remove('hide');
+}
+});
+}
+document.querySelectorAll('[data-take-input]').forEach(function(ta){
+ta.addEventListener('input', function(){ syncTakes(); save(); });
+});
+var monthSel = document.getElementById('month');
+var status = document.getElementById('status');
+function key(){ return 'report:' + monthSel.value; }
+var t;
+function save(){
+clearTimeout(t);
+t = setTimeout(function(){
+var data = { notes:{}, highlights:[] };
+document.querySelectorAll('[data-k]').forEach(function(n){ data.notes[n.dataset.k] = n.innerHTML; });
+document.querySelectorAll('[data-take-input]').forEach(function(n){ data.notes['take:'+n.dataset.takeInput] = n.value; });
+hls.querySelectorAll('.txt').forEach(function(n){ if((n.textContent||'').trim()) data.highlights.push(n.innerHTML); });
+try { localStorage.setItem(key(), JSON.stringify(data)); status.textContent = 'Saved ' + new Date().toLocaleTimeString(); }
+catch(e){ status.textContent = 'Not saved — storage is off'; }
+}, 300);
+}
+function load(){
+var data = null;
+try { var raw = localStorage.getItem(key()); if(raw) data = JSON.parse(raw); } catch(e){}
+document.querySelectorAll('[data-k]').forEach(function(n){
+if (data && data.notes && data.notes[n.dataset.k] !== undefined) n.innerHTML = data.notes[n.dataset.k];
+});
+document.querySelectorAll('[data-take-input]').forEach(function(n){
+var dk = 'take:'+n.dataset.takeInput;
+if (data && data.notes && data.notes[dk] !== undefined) n.value = data.notes[dk];
+});
+hls.innerHTML = '';
+var list = (data && data.highlights && data.highlights.length) ? data.highlights : defaultHighlights;
+list.forEach(function(h){ addHl(h); });
+syncTakes();
+status.textContent = data ? 'Loaded saved notes' : 'Loaded default content';
+}
+document.querySelectorAll('[data-k]').forEach(function(n){ n.addEventListener('input', save); });
+monthSel.addEventListener('change', function(){
+document.querySelectorAll('.monthLabel').forEach(function(el){ el.textContent = monthSel.value; });
+load();
+});
+document.getElementById('clearBtn').addEventListener('click', function(){
+try { localStorage.removeItem(key()); } catch(e){}
+load();
+});
+var viewBtn = document.getElementById('viewBtn');
+function setView(clientOn){
+document.body.classList.toggle('client', clientOn);
+document.body.classList.toggle('internal', !clientOn);
+viewBtn.setAttribute('aria-pressed', clientOn ? 'true' : 'false');
+viewBtn.textContent = clientOn ? 'Back to partner view' : 'Client view';
+document.querySelectorAll('[data-k]').forEach(function(n){ n.setAttribute('contenteditable', clientOn ? 'false' : 'true'); });
+syncTakes();
+applySectionState();
+}
+viewBtn.addEventListener('click', function(){
+setView(viewBtn.getAttribute('aria-pressed') !== 'true');
+});
+document.getElementById('pdfBtn').addEventListener('click', function(){ window.print(); });
+(function(){
+var pop = document.createElement('div');
+pop.className = 'selpop noprint';
+pop.innerHTML = '<button type="button" data-cmd="bold" title="Bold"><b>B</b></button>'+
+'<button type="button" data-cmd="italic" title="Italic"><i>I</i></button>'+
+'<button type="button" data-cmd="mark" title="Highlight (⌘H / Ctrl+H)" aria-label="Highlight"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="m9 11-6 6v3h9l3-3"/><path d="m22 12-4.6 4.6a2 2 0 0 1-2.8 0l-5.2-5.2a2 2 0 0 1 0-2.8L14 4"/></svg></button>';
+document.body.appendChild(pop);
+function activeEditable(){
+var sel = window.getSelection();
+if(!sel || sel.rangeCount===0 || sel.isCollapsed) return null;
+var node = sel.anchorNode;
+while(node && node.nodeType!==1) node = node.parentNode;
+return (node && node.closest) ? node.closest('[contenteditable="true"]') : null;
+}
+function hide(){ pop.style.display='none'; }
+function positionAndShow(){
+if(!document.body.classList.contains('internal')){ hide(); return; }
+var editable = activeEditable();
+if(!editable){ hide(); return; }
+var sel = window.getSelection();
+var rect = sel.getRangeAt(0).getBoundingClientRect();
+if(!rect || (rect.width===0 && rect.height===0)){ hide(); return; }
+pop.style.display = 'flex';
+var top = window.scrollY + rect.top - pop.offsetHeight - 8;
+var left = window.scrollX + rect.left + rect.width/2 - pop.offsetWidth/2;
+pop.style.top = Math.max(8, top) + 'px';
+pop.style.left = Math.max(8, left) + 'px';
+}
+document.addEventListener('selectionchange', function(){
+clearTimeout(pop._t);
+pop._t = setTimeout(positionAndShow, 60);
+});
+document.addEventListener('scroll', function(){ clearTimeout(pop._t); pop._t = setTimeout(positionAndShow, 60); }, true);
+function toggleHighlight(range){
+var node = range.commonAncestorContainer;
+node = node.nodeType === 1 ? node : node.parentNode;
+var existingMark = node.closest ? node.closest('mark.usrhl') : null;
+if (existingMark){
+var parent = existingMark.parentNode;
+while (existingMark.firstChild) parent.insertBefore(existingMark.firstChild, existingMark);
+parent.removeChild(existingMark);
+return;
+}
+var mark = document.createElement('mark');
+mark.className = 'usrhl';
+try { range.surroundContents(mark); }
+catch(e){
+var frag = range.extractContents();
+mark.appendChild(frag);
+range.insertNode(mark);
+}
+}
+function applyCmd(cmd){
+var sel = window.getSelection();
+if(!sel || sel.rangeCount===0) return false;
+var range = sel.getRangeAt(0);
+var editable = activeEditable();
+if(!editable) return false;
+if (cmd === 'mark') toggleHighlight(range);
+else document.execCommand(cmd, false, null);
+editable.dispatchEvent(new Event('input', {bubbles:true}));
+hide();
+return true;
+}
+pop.addEventListener('mousedown', function(e){ e.preventDefault(); });
+pop.addEventListener('click', function(e){
+var btn = e.target.closest('button[data-cmd]');
+if(btn) applyCmd(btn.dataset.cmd);
+});
+document.addEventListener('keydown', function(e){
+if(!(e.metaKey||e.ctrlKey) || e.altKey) return;
+var k = e.key.toLowerCase();
+if(k!=='b' && k!=='i' && k!=='h') return;
+if(!activeEditable()) return;
+e.preventDefault();
+applyCmd(k==='b'?'bold':k==='i'?'italic':'mark');
+});
+})();
+var themeBtn = document.getElementById('themeBtn');
+function currentTheme(){ try{ return localStorage.getItem('report:theme') || 'auto'; }catch(e){ return 'auto'; } }
+function paintThemeBtn(){
+var t = currentTheme();
+themeBtn.textContent = 'Theme: ' + (t === 'auto' ? 'Auto' : t === 'light' ? 'Light' : 'Dark');
+}
+themeBtn.addEventListener('click', function(){
+var order = ['auto','light','dark'];
+var next = order[(order.indexOf(currentTheme()) + 1) % order.length];
+if (next === 'auto') document.documentElement.removeAttribute('data-theme');
+else document.documentElement.setAttribute('data-theme', next);
+try{ localStorage.setItem('report:theme', next); }catch(e){}
+paintThemeBtn();
+});
+paintThemeBtn();
+initSectionState();
+setView(false);
+load();
+})();
+</script>
+<script>
+(function(){
+var C=['#25408a','#2c7a4b','#f05b22','#7c3aed','#0e7490'];
+function rings(){document.querySelectorAll('[data-ring]').forEach(function(s){var v=+s.dataset.ring,r=19,c=2*Math.PI*r;s.innerHTML='<circle class="bg" cx="24" cy="24" r="'+r+'"/><circle class="fg'+(v<50?' mid':'')+'" cx="24" cy="24" r="'+r+'" stroke-dasharray="'+(c*v/100).toFixed(1)+' '+c.toFixed(1)+'"/>';});}
+function spark(id,v){var s=document.getElementById(id);if(!s)return;var lo=Math.min.apply(null,v),hi=Math.max.apply(null,v),sp=(hi-lo)||1;var p=v.map(function(y,i){return (4+i*64/(v.length-1)).toFixed(1)+','+(18-((y-lo)/sp)*14).toFixed(1)}).join(' ');s.innerHTML='<polyline points="'+p+'"/><circle cx="68" cy="'+(18-((v[v.length-1]-lo)/sp)*14).toFixed(1)+'" r="2.5"/>';}
+function line(id,labels,series,o){var s=document.getElementById(id);if(!s)return;o=o||{};var W=720,H=+s.getAttribute('viewBox').split(' ')[3],L=44,R=12,T=12,B=28;var all=[].concat.apply([],series.map(function(q){return q.v.filter(function(x){return x!=null})}));var lo=o.inv?1:0,hi=Math.max.apply(null,all);if(o.inv){hi=Math.max(hi,100);}var sq=function(v){return o.inv?Math.sqrt(v):v};var yv=function(v){return o.inv?T+((sq(v)-sq(lo))/(sq(hi)-sq(lo)))*(H-T-B):H-B-((v-lo)/(hi-lo))*(H-T-B)};var xv=function(i){return L+i*(W-L-R)/(labels.length-1)};var out='';var ticks=o.inv?[1,3,10,20,50,100]:[0,hi/2,hi];ticks.forEach(function(t){out+='<line class="ax" x1="'+L+'" x2="'+(W-R)+'" y1="'+yv(t).toFixed(1)+'" y2="'+yv(t).toFixed(1)+'"/><text x="'+(L-6)+'" y="'+(yv(t)+4).toFixed(1)+'" text-anchor="end">'+(o.inv?'#'+t:Math.round(t).toLocaleString())+'</text>';});labels.forEach(function(l,i){if(l)out+='<text x="'+xv(i).toFixed(1)+'" y="'+(H-8)+'" text-anchor="middle">'+l+'</text>';});series.forEach(function(q,k){var pts=[];q.v.forEach(function(v,i){if(v!=null)pts.push(xv(i).toFixed(1)+','+yv(v).toFixed(1))});if(q.ghost){out+='<polyline class="ghost" points="'+pts.join(' ')+'"/>';return;}if(q.area)out+='<polygon class="area" fill="'+(q.c||C[k])+'" points="'+xv(0)+','+(H-B)+' '+pts.join(' ')+' '+xv(q.v.length-1)+','+(H-B)+'"/>';out+='<polyline class="ln" stroke="'+(q.c||C[k])+'" points="'+pts.join(' ')+'"/>';var last=pts[pts.length-1].split(',');out+='<circle cx="'+last[0]+'" cy="'+last[1]+'" r="3" fill="'+(q.c||C[k])+'"/>';});s.innerHTML=out;}
+var dom=[847,838,842,833,801,845,859,847,842,826,858,1056,1005];
+var mo=['Oct 25','Nov','Dec','Jan 26','Feb','Mar','Apr','May','Jun','Jul','Aug','Sep','Oct 1'];
+spark('sp-dom',dom);spark('sp-bl',[14467,15901,17152,17975,19700,24362,26401,27661,28045,28235,28496,28133,24421]);
+line('ch-dom',mo,[{v:dom,area:1}]);
+var kw=[['eco friendly rodent control services los angeles',[3,3,2,2,2,1,1,1,1,1,1,1,1]],['eco friendly exterminators orange county',[9,8,8,7,6,6,5,5,4,4,3,3,3]],['termite inspection orange county',[14,13,12,11,11,9,8,8,7,6,6,5,5]],['termite control southern california',[48,45,44,41,40,38,37,36,35,35,34,33,33]],['pest control los angeles',[null,null,null,null,null,null,null,98,95,92,90,88,null]]];
+var wk=['Jul 6','','Jul 20','','Aug 3','','Aug 17','','Aug 31','','Sep 14','','Oct 1'];
+line('ch-kw',wk,kw.map(function(k){return{v:k[1]}}),{inv:1});
+document.getElementById('lg-kw').innerHTML=kw.map(function(k,i){return'<span><i style="background:'+C[i]+'"></i>'+k[0]+'</span>'}).join('');
+(function(){var s=document.getElementById('ch-dist');if(!s)return;var B=['#1f6b3a','#6cbf6a','#f5c542','#f28c38','#c0392b'],N=['1–3','4–10','11–20','21–50','51+ / not ranked'];var out='',W=720,L=44,T=10,H=150,Bm=28,bw=38;for(var w=0;w<13;w++){var c=[0,0,0,0,0];kw.forEach(function(k){var p=k[1][w];var b=p==null||p>50?4:p<=3?0:p<=10?1:p<=20?2:3;c[b]++});var x=L+w*(W-L-12)/13+6,y=H-Bm;for(var b=0;b<5;b++){if(!c[b])continue;var hh=c[b]*(H-T-Bm)/5;y-=hh;out+='<rect x="'+x.toFixed(1)+'" y="'+y.toFixed(1)+'" width="'+bw+'" height="'+(hh-1).toFixed(1)+'" rx="2" fill="'+B[b]+'"/>'}if(wk[w])out+='<text x="'+(x+bw/2).toFixed(1)+'" y="'+(H-8)+'" text-anchor="middle">'+wk[w]+'</text>'}out+='<text x="'+(L-6)+'" y="'+(T+4)+'" text-anchor="end">5</text><text x="'+(L-6)+'" y="'+(H-Bm+4)+'" text-anchor="end">0</text>';s.innerHTML=out;var lg=document.createElement('div');lg.className='legend';lg.innerHTML=N.map(function(n,i){return'<span><i style="background:'+B[i]+'"></i>'+n+'</span>'}).join('');s.parentNode.insertBefore(lg,s.nextSibling);})();
+line('ch-ga',['Oct 25','Nov','Dec','Jan 26','Feb','Mar','Apr','May','Jun','Jul','Aug','Sep'],[{v:[1310,1240,1180,1420,1390,1560,1640,1720,1810,1900,1877,1875],area:1,c:'#2c7a4b'},{v:[1120,1080,990,1150,1210,1300,1350,1410,1480,1520,1500,1490],ghost:1}]);
+rings();
+})();
+</script>
+</body>
+</html>
