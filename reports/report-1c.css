@@ -246,3 +246,29 @@ table.dt td .sub{font-size:8pt}
 .footer{padding:4mm 0 0;font-size:8pt}
 body.internal .editme{outline:none !important;background:none !important}
 }
+
+/* round 9: rings, charts, expected-results cards, plan list */
+.ringkpi{flex-direction:row;gap:12px;align-items:center}
+.ring{width:56px;height:56px;flex:none}
+.ring circle{fill:none;stroke-width:5}
+.ring .bg{stroke:var(--rule)}
+.ring .fg{stroke:var(--pos);stroke-linecap:round;transform:rotate(-90deg);transform-origin:50% 50%}
+.ring .mid{stroke:var(--accent)}
+.kpi .spark{display:block;margin-top:6px;width:72px;height:22px}
+.chart{width:100%;height:auto;display:block;margin:4px 0 14px;font:500 11px "Hanken Grotesk",sans-serif}
+.chart .ax{stroke:var(--rule);stroke-width:1}
+.chart text{fill:var(--muted)}
+.chart .ln{fill:none;stroke-width:2;stroke-linejoin:round}
+.chart .area{opacity:.12}
+.legend{display:flex;flex-wrap:wrap;gap:6px 14px;font:500 12px "Hanken Grotesk",sans-serif;color:var(--muted);margin:-6px 0 14px}
+.legend i{display:inline-block;width:10px;height:10px;border-radius:2px;margin-right:6px;vertical-align:-1px}
+.plan{margin:6px 0 0;padding:0;list-style:none;display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:6px 24px;font:400 15px/1.5 "Hanken Grotesk",sans-serif;color:#fff}
+.plan li{display:flex;gap:10px;align-items:baseline}
+.plan .d{flex:none;font-size:12px;font-weight:700;letter-spacing:.04em;text-transform:uppercase;color:var(--onDarkMute);min-width:52px}
+.ia{display:grid;grid-template-columns:repeat(3,1fr);gap:12px;margin-top:16px}
+.ia>div{background:rgba(255,255,255,.1);border:1px solid rgba(255,255,255,.25);border-radius:14px;padding:12px 14px;font:400 14px/1.5 "Hanken Grotesk",sans-serif;color:#fff}
+.ia .er{display:block;font-size:11px;font-weight:700;letter-spacing:.06em;text-transform:uppercase;color:var(--onDarkMute);margin-bottom:6px}
+.ia .note{color:#fff;font-size:14px}
+.next .sublbl{font:700 12px/1 "Hanken Grotesk",sans-serif;letter-spacing:.08em;text-transform:uppercase;color:var(--onDarkMute);margin-top:14px}
+@media (max-width:760px){.ia,.plan{grid-template-columns:1fr}.ring{width:44px;height:44px}}
+@media print{.ia{gap:6px;margin-top:8px}.ia>div{padding:6px 8px;font-size:8.5pt;border-radius:8px;background:rgba(255,255,255,.12) !important;-webkit-print-color-adjust:exact;print-color-adjust:exact}.plan{font-size:8.5pt;gap:2px 14px}.chart{margin:2px 0 6px}.legend{font-size:8pt;margin:-2px 0 6px}.ring{width:36px;height:36px}}
