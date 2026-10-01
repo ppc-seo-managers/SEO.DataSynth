@@ -121,9 +121,10 @@ body.internal [data-internal-only]{display:revert}
 body.internal .takeactions{display:flex;align-items:center;gap:8px}
 .internalbar{background:var(--brand);color:#fff;padding:12px 56px;font-size:14px;font-weight:600;display:none;justify-content:space-between;align-items:center;gap:10px;flex-wrap:wrap}
 body.internal .internalbar{display:flex}
-.fmtbar{display:inline-flex;align-items:center;gap:6px;flex-wrap:wrap}
-.fmtbar button{min-height:30px;min-width:30px;padding:0 10px;border-radius:999px;border:1px solid rgba(255,255,255,.7);background:rgba(255,255,255,.12);color:#fff;font:700 13px 'Hanken Grotesk',sans-serif;cursor:pointer}
-.fmtbar button:hover{background:#fff;color:var(--brand)}
+.fmtbar{display:inline-flex;align-items:center;gap:6px;flex-wrap:wrap;font-size:13px;color:var(--onDarkMute)}
+body.internal .bar .fmtbar{display:inline-flex}
+.fmtbar button{min-height:34px;min-width:34px;padding:0 12px;border-radius:999px;border:1px solid rgba(255,255,255,.7);background:rgba(255,255,255,.1);color:#fff;font:700 14px 'Hanken Grotesk',sans-serif;cursor:pointer}
+.fmtbar button:hover{background:var(--accent);border-color:var(--accent)}
 .footer{padding:28px 56px 40px;font-size:13px;color:var(--faint)}
 @media (max-width:760px){
 .hdr,.cardpad,.sec,.next{padding-left:20px;padding-right:20px}
