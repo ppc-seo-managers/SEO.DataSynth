@@ -98,6 +98,10 @@ table.dt td .sub{font-size:13px;color:var(--faint);display:block;margin-top:2px}
 .note{font-size:14px;line-height:1.5;color:var(--faint)}
 .analysis{font-size:15px;line-height:1.6;color:var(--body);background:var(--tile);border-radius:14px;padding:16px 18px}
 .flagbox{border:2px dashed var(--accent);border-radius:14px;padding:12px 16px;font-size:15px;color:var(--takeLabel);font-weight:700}
+.asides{border:1.5px dashed var(--takeDash);border-radius:14px;padding:12px 16px 14px;display:flex;flex-direction:column;gap:8px}
+.asides .asidelabel{font-size:12px;font-weight:700;letter-spacing:.12em;text-transform:uppercase;color:var(--takeLabel)}
+.asides .aside{font-size:14px;line-height:1.5;color:var(--body);margin:0}
+.asides .aside.flag{color:var(--takeLabel);font-weight:700}
 .take{background:var(--takeBg);border-radius:18px;padding:22px 24px;display:flex;flex-direction:column;gap:8px}
 .take.hide{display:none !important}
 .take .takehead{display:flex;justify-content:space-between;align-items:center;gap:10px;flex-wrap:wrap}
@@ -121,6 +125,7 @@ table.dt td .sub{font-size:13px;color:var(--faint);display:block;margin-top:2px}
 [data-internal-only]{display:none}
 body.internal [data-internal-only]{display:revert}
 body.internal .takeactions{display:flex;align-items:center;gap:8px}
+body.internal .asides{display:flex}
 .internalbar{background:var(--brand);color:#fff;padding:12px 56px;font-size:14px;font-weight:600;display:none;justify-content:space-between;align-items:center;gap:10px;flex-wrap:wrap}
 body.internal .internalbar{display:flex}
 .fmtbar{display:inline-flex;align-items:center;gap:6px;flex-wrap:wrap;font-size:13px;color:var(--onDarkMute)}
@@ -161,9 +166,18 @@ body.internal .bar .fmtbar{display:inline-flex}
 .barrow .v{grid-area:v}
 .analysis{font-size:14px;padding:14px;border-radius:12px}
 .tblwrap{padding:6px 14px;border-radius:14px}
-table.dt{font-size:14px;min-width:560px}
-table.dt th,table.dt td{padding-right:16px}
-table.dt td.num,table.dt th.num{white-space:nowrap}
+table.dt{font-size:14px;min-width:0}
+table.dt thead{display:none}
+table.dt,table.dt tbody,table.dt tr,table.dt td{display:block}
+table.dt tr{padding:10px 0;border-top:1px solid var(--rule)}
+table.dt td{border-top:0;padding:3px 0;display:flex;justify-content:space-between;align-items:baseline;gap:12px;text-align:left}
+table.dt td.num{text-align:right}
+table.dt td[data-label]::before{content:attr(data-label);font-size:12px;font-weight:600;color:var(--muted);text-align:left;flex-shrink:0}
+table.dt td.head{display:block;font-weight:700;font-size:15px;color:var(--ink);padding-bottom:6px}
+table.dt td .sub{display:inline;margin:0 0 0 6px;font-weight:400}
+table.dt td.wrap{word-break:break-all}
+.tblwrap{overflow:visible}
+.tblwrap>div{overflow:visible !important}
 .take{padding:16px;border-radius:14px}
 .take .takebody{font-size:16px}
 .workrow{grid-template-columns:1fr;gap:6px;padding:14px}
