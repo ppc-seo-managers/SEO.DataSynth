@@ -8,6 +8,7 @@ a{color:var(--brand)}
 a:hover{color:var(--brandInk)}
 .bar{position:sticky;top:env(safe-area-inset-top,0px);z-index:20;background:var(--dark);color:var(--onDark);padding:10px 16px;display:flex;flex-wrap:wrap;gap:8px;align-items:center}
 .bar .grow{flex-grow:1}
+.bartitle{font-size:16px;letter-spacing:.02em}
 .btn{min-height:44px;padding:0 16px;border-radius:999px;border:1px solid var(--onDark);background:transparent;color:var(--onDark);font:600 15px 'Hanken Grotesk',sans-serif;cursor:pointer;display:inline-flex;align-items:center;gap:8px}
 .btn.solid{background:var(--accent);border-color:var(--accent);color:#fff}
 .btn.light{background:var(--onDark);color:var(--dark)}
@@ -128,15 +129,47 @@ body.internal .bar .fmtbar{display:inline-flex}
 .fmtbar button:hover{background:var(--accent);border-color:var(--accent)}
 .footer{padding:28px 56px 40px;font-size:13px;color:var(--faint)}
 @media (max-width:760px){
-.hdr,.cardpad,.sec,.next{padding-left:20px;padding-right:20px}
-.card{margin-left:20px;margin-right:20px}
-.next{margin-left:20px;margin-right:20px}
-.internalbar,.togglepanel{padding-left:20px;padding-right:20px}
+.bar{position:static;padding:8px 12px;gap:6px}
+.bar .bartitle{font-size:13px;letter-spacing:.04em}
+.bar .status{display:none}
+.bar select{min-height:36px;font-size:13px;padding:0 6px}
+.btn{min-height:36px;padding:0 12px;font-size:13px;gap:6px}
+.togglepanel{padding:10px 16px;gap:6px 14px}
+.toggleitem{font-size:13px}
+.internalbar{padding:10px 16px;font-size:13px;gap:4px}
+.hdr{padding:16px;gap:12px}
+.hdr img.clientlogo{height:48px}
+.hdr .right{gap:10px}
+.partnerchip img{height:30px}
+.card,.next{margin-left:12px;margin-right:12px;border-radius:20px}
+.cardpad,.sec,.next,.hero .left{padding:24px 18px}
+.sec{gap:18px}
 .hero{grid-template-columns:1fr}
-.hero .photo{min-height:220px}
-.hlgrid{grid-template-columns:1fr}
-.workrow{grid-template-columns:1fr;gap:6px}
+.hero .left{gap:14px}
+.hero .overview{font-size:16px}
+.hero .photo{min-height:200px}
+.hlgrid{grid-template-columns:1fr;gap:8px}
+.hltile{padding:14px 16px;font-size:15px;border-radius:14px}
+.next .body18{font-size:17px}
+.kpis{grid-template-columns:repeat(2,minmax(0,1fr));gap:8px}
+.kpi{padding:14px;border-radius:14px}
+.kpi .val{font-size:28px}
+.kpi .lab,.kpi .delta{font-size:13px}
+.barrow{grid-template-columns:minmax(0,1fr) auto;grid-template-areas:"lbl v" "track track";gap:4px 10px;font-size:14px}
+.barrow .lbl{grid-area:lbl}
+.barrow .track{grid-area:track}
+.barrow .v{grid-area:v}
+.analysis{font-size:14px;padding:14px;border-radius:12px}
+.tblwrap{padding:6px 14px;border-radius:14px}
+table.dt{font-size:14px;min-width:560px}
+table.dt th,table.dt td{padding-right:16px}
+table.dt td.num,table.dt th.num{white-space:nowrap}
+.take{padding:16px;border-radius:14px}
+.take .takebody{font-size:16px}
+.workrow{grid-template-columns:1fr;gap:6px;padding:14px}
 .workrow .doc{text-align:left}
+.workrow .doc .none{display:none}
+.footer{padding:20px 16px 32px}
 }
 @media print{
 @page{size:letter;margin:8mm}
