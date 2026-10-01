@@ -44,7 +44,8 @@ body.internal .next .editme{outline-color:rgba(255,255,255,.6)}
 body.internal .next .editme:hover{background:rgba(255,255,255,.12)}
 body.internal .next .editme:focus{outline-color:#fff;background:rgba(255,255,255,.18)}
 .selpop{position:absolute;z-index:60;display:none;gap:2px;background:var(--dark);border-radius:10px;padding:4px;box-shadow:0 8px 22px rgba(0,0,0,.3)}
-.selpop button{min-width:34px;min-height:34px;border:0;background:transparent;color:#fff;border-radius:6px;font:700 15px 'Hanken Grotesk',sans-serif;cursor:pointer}
+.selpop button{min-width:34px;min-height:34px;border:0;background:transparent;color:#fff;border-radius:6px;font:700 15px 'Hanken Grotesk',sans-serif;cursor:pointer;display:inline-flex;align-items:center;justify-content:center}
+.selpop button svg{display:block}
 .selpop button:hover{background:rgba(255,255,255,.18)}
 mark.usrhl{background:linear-gradient(transparent 55%,var(--highlight) 55%);color:inherit}
 .cardpad{padding:40px 48px}
@@ -138,18 +139,58 @@ body.internal .bar .fmtbar{display:inline-flex}
 .workrow .doc{text-align:left}
 }
 @media print{
-@page{margin:10mm}
-.bar,.togglepanel,.internalbar,.noprint,.pull,.x,.selpop,.edittag{display:none !important}
-body{background:#fff;color:#000;font-size:11pt}
-.card,.next{margin:0;break-inside:avoid;page-break-inside:avoid;border:1px solid #ddd}
+@page{size:letter;margin:8mm}
+.bar,.togglepanel,.internalbar,.noprint,.pull,.x,.selpop,.edittag,[data-internal-only],.take textarea{display:none !important}
+html{font-size:12px}
+body{background:#fff;color:#000;font-size:10pt;line-height:1.4;zoom:.8}
+.wrap{max-width:none}
+.hdr{padding:0 0 4mm}
+.hdr img.clientlogo{height:40px}
+.partnerchip img{height:26px}
+.card,.next{margin:0 0 10px;border:1px solid #ddd;border-radius:14px;break-inside:auto;page-break-inside:auto;overflow:visible}
 .page{break-after:page;page-break-after:always}
 .page:last-of-type{break-after:auto;page-break-after:auto}
-.hdr{padding:0 0 6mm}
-.sec,.cardpad{padding:14px 18px}
-.hero .left{padding:18px}
-.hero{min-height:0}
-.hero .photo{min-height:200px}
-.take{background:#fff3ec !important;-webkit-print-color-adjust:exact;print-color-adjust:exact}
-.next{background:var(--brand) !important;color:#fff !important;-webkit-print-color-adjust:exact;print-color-adjust:exact}
+.sec,.cardpad{padding:14px 18px;gap:10px}
+.hero{min-height:0;break-inside:avoid}
+.hero .left{padding:14px 18px;gap:8px}
+.hero h1{font-size:26pt}
+.hero .overview{font-size:10.5pt;line-height:1.45;padding-top:8px}
+.hero .meta{font-size:9pt}
+.hero .photo{min-height:150px;-webkit-print-color-adjust:exact;print-color-adjust:exact}
+.hltitle{font-size:20pt;margin:0}
+.hlgrid{gap:6px;margin-top:8px}
+.hltile{padding:8px 10px;font-size:9.5pt;line-height:1.45;break-inside:avoid}
+.next{padding:14px 18px;gap:6px;break-inside:avoid;background:var(--brand) !important;color:#fff !important;-webkit-print-color-adjust:exact;print-color-adjust:exact}
+.next .body18{font-size:10.5pt;line-height:1.45}
+.sechead{gap:8px}
+.pill{font-size:9pt;padding:3px 9px}
+.sec h2{font-size:18pt}
+.sectitle{font-size:16pt}
+.dispSub{font-size:12pt;line-height:1.3}
+.kpis{gap:6px;grid-template-columns:repeat(4,minmax(0,1fr))}
+.kpi{padding:8px 10px;gap:2px;break-inside:avoid;border-radius:10px}
+.kpi .val{font-size:20pt}
+.kpi .lab,.kpi .delta{font-size:8.5pt}
+.barstitle{font-size:10pt}
+.bars{gap:5px}
+.barrow{font-size:9pt;grid-template-columns:170px minmax(0,1fr) 80px;gap:8px}
+.track,.fill{height:8px;-webkit-print-color-adjust:exact;print-color-adjust:exact}
+.analysis{font-size:9pt;line-height:1.45;padding:8px 10px;border-radius:8px}
+.note{font-size:8pt;line-height:1.35}
+.tblwrap{padding:2px 10px;border-radius:8px;overflow:visible}
+.tbltitle{font-size:9.5pt;padding:6px 0 2px}
+table.dt{font-size:9pt}
+table.dt th{font-size:8pt;padding:4px 6px 4px 0}
+table.dt td{padding:4px 6px 4px 0}
+table.dt td .sub{font-size:8pt}
+.take{padding:10px 12px;gap:4px;break-inside:avoid;border-radius:8px;background:#fff3ec !important;-webkit-print-color-adjust:exact;print-color-adjust:exact}
+.take .takelabel{font-size:8pt}
+.take.empty{display:none !important}
+.take .takebody{font-size:10pt;line-height:1.45}
+.workrow{padding:6px 10px;font-size:8.5pt;gap:8px;break-inside:avoid;border-radius:8px;grid-template-columns:minmax(0,1.2fr) 80px 70px minmax(0,2fr) 48px}
+.workrow .title{font-size:9pt}
+.typepill{font-size:8pt}
+.stpill{font-size:8pt}
+.footer{padding:4mm 0 0;font-size:8pt}
 body.internal .editme{outline:none !important;background:none !important}
 }
