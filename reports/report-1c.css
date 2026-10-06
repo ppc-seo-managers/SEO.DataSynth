@@ -66,6 +66,8 @@ mark.usrhl{background:linear-gradient(transparent 55%,var(--highlight) 55%);colo
 .next .pill{background:var(--accent);color:#fff}
 .next .body18{font-size:19px;line-height:1.6}
 .next .note{color:#fff}
+.next .hlhead{align-items:center;margin-bottom:2px}
+.next .hltitle{color:#fff;margin:0}
 .next .edittag{color:var(--takeLabel)}
 .sec{display:flex;flex-direction:column;gap:22px;padding:44px 48px}
 .sechead{display:flex;align-items:center;gap:12px;flex-wrap:wrap}
