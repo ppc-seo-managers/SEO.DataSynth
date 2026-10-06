@@ -90,3 +90,40 @@ lis.forEach(function(li,i){ li.classList.toggle('on',i===cur); }); }
 addEventListener('scroll',function(){ if(!tick){ tick=true; requestAnimationFrame(mark); } },{passive:true});
 addEventListener('resize',mark); mark();
 }
+
+function workTable(id, rows){
+var el=document.getElementById(id); if(!el) return;
+var cols=[{k:'task',l:'Task',c:'title'},{k:'type',l:'Type',c:''},{k:'status',l:'Status',c:''},{k:'notes',l:'Notes',c:'notes'},{k:'doc',l:'Document',c:'doc'}];
+var order=rows.map(function(r,i){return i}), key=null, dir=1;
+function val(r,k){ var v=r[k]; return v==null?'':String(v); }
+function cmp(a,b){
+var x=val(rows[a],key), y=val(rows[b],key);
+if(key==='doc'){ x=x?'0':'1'; y=y?'0':'1'; }
+if(x===''&&y!=='') return 1; if(y===''&&x!=='') return -1;
+var c=x.localeCompare(y,undefined,{numeric:true,sensitivity:'base'});
+return (c||a-b)*dir;
+}
+function head(){
+return '<div class="workhead" role="row">'+cols.map(function(c){
+var on=c.k===key, arr=on?(dir>0?'▲':'▼'):'▲▼';
+return '<div class="'+c.c+'"><button type="button" class="'+(on?'on':'')+'" data-k="'+c.k+'" aria-sort="'+(on?(dir>0?'ascending':'descending'):'none')+'" title="Sort by '+c.l+'">'+c.l+'<span class="arr" aria-hidden="true">'+arr+'</span></button></div>';
+}).join('')+'</div>';
+}
+function body(){
+return order.map(function(i){ var r=rows[i];
+var st=r.status==='Completed'?'st-done':'st-progress';
+var doc=r.doc?'<a href="'+esc(r.doc)+'" target="_blank" rel="noopener">Open ↗</a>':'<span class="none">—</span>';
+var notes=r.notes?nl2br(r.notes):'<span class="none">—</span>';
+return '<div class="workrow"><div class="title">'+esc(r.task)+'</div><div><span class="typepill">'+esc(r.type)+'</span></div><div class="stpill '+st+'">'+esc(r.status)+'</div><div class="notes">'+notes+'</div><div class="doc">'+doc+'</div></div>';
+}).join('');
+}
+function draw(){ el.innerHTML=head()+body(); }
+el.addEventListener('click',function(e){
+var b=e.target.closest('button[data-k]'); if(!b) return;
+var k=b.getAttribute('data-k');
+if(k===key) dir=-dir; else { key=k; dir=1; }
+order=rows.map(function(r,i){return i}).sort(cmp);
+draw();
+});
+draw();
+}

@@ -116,7 +116,15 @@ table.dt td .sub{font-size:13px;color:var(--faint);display:block;margin-top:2px}
 .pull{min-height:32px;padding:0 12px;border-radius:999px;border:1px solid var(--ink);background:transparent;color:var(--ink);font:600 13px 'Hanken Grotesk',sans-serif;cursor:pointer;white-space:nowrap}
 .pull:hover{background:var(--ink);color:var(--card)}
 .saymsg{font-size:12px;color:var(--muted)}
-.workrow{display:grid;grid-template-columns:minmax(0,1.2fr) 110px 120px minmax(0,2fr) 64px;gap:16px;align-items:baseline;padding:14px 18px;background:var(--tile);border-radius:14px;font-size:15px}
+.workrow,.workhead{display:grid;grid-template-columns:minmax(0,1.2fr) 110px 120px minmax(0,2fr) 64px;gap:16px;align-items:baseline;padding:14px 18px;background:var(--tile);border-radius:14px;font-size:15px}
+.workhead{background:none;padding:0 18px 2px;border-radius:0;align-items:end}
+.workhead .doc{text-align:right}
+.workhead button{all:unset;cursor:pointer;display:inline-flex;align-items:center;gap:4px;font:700 13px/1.2 'Hanken Grotesk',system-ui,sans-serif;color:var(--muted);white-space:nowrap;border-radius:6px}
+.workhead button:hover,.workhead button:focus-visible{color:var(--ink)}
+.workhead button:focus-visible{outline:2px solid var(--accent);outline-offset:2px}
+.workhead button .arr{font-size:10px;opacity:.35}
+.workhead button.on{color:var(--ink)}
+.workhead button.on .arr{opacity:1;color:var(--accent)}
 .workrow .title{font-weight:700;font-size:16px;color:var(--ink)}
 .typepill{font-size:12px;font-weight:700;background:var(--card);padding:4px 10px;border-radius:99px;color:var(--brand);border:1px solid var(--tileBorder)}
 .stpill{font-size:12px;font-weight:700}
@@ -186,6 +194,7 @@ table.dt td.wrap{word-break:break-all}
 .take{padding:16px;border-radius:14px}
 .take .takebody{font-size:16px}
 .workrow{grid-template-columns:1fr;gap:6px;padding:14px}
+.workhead{display:none}
 .workrow .doc{text-align:left}
 .workrow .doc .none{display:none}
 .footer{padding:20px 16px 32px}
@@ -239,7 +248,10 @@ table.dt td .sub{font-size:8pt}
 .take .takelabel{font-size:8pt}
 .take.empty{display:none !important}
 .take .takebody{font-size:10pt;line-height:1.45}
-.workrow{padding:6px 10px;font-size:8.5pt;gap:8px;break-inside:avoid;border-radius:8px;grid-template-columns:minmax(0,1.2fr) 80px 70px minmax(0,2fr) 48px}
+.workrow,.workhead{padding:6px 10px;font-size:8.5pt;gap:8px;break-inside:avoid;border-radius:8px;grid-template-columns:minmax(0,1.2fr) 80px 70px minmax(0,2fr) 48px}
+.workhead{padding:0 10px 2px;break-after:avoid}
+.workhead button{font-size:8pt;cursor:default}
+.workhead button .arr{display:none}
 .workrow .title{font-size:9pt}
 .typepill{font-size:8pt}
 .stpill{font-size:8pt}
