@@ -272,3 +272,26 @@ body.internal .editme{outline:none !important;background:none !important}
 .next .sublbl{font:700 12px/1 "Hanken Grotesk",sans-serif;letter-spacing:.08em;text-transform:uppercase;color:var(--onDarkMute);margin-top:14px}
 @media (max-width:760px){.ia,.plan{grid-template-columns:1fr}.ring{width:44px;height:44px}}
 @media print{.ia{gap:6px;margin-top:8px}.ia>div{padding:6px 8px;font-size:8.5pt;border-radius:8px;background:rgba(255,255,255,.12) !important;-webkit-print-color-adjust:exact;print-color-adjust:exact}.plan{font-size:8.5pt;gap:2px 14px}.chart{margin:2px 0 6px}.legend{font-size:8pt;margin:-2px 0 6px}.ring{width:36px;height:36px}}
+/* Floating table of contents (2026-10-06): button + popover under 1440px, open rail at ≥1440px. Hidden in print via .noprint. */
+html{scroll-behavior:smooth}
+[data-toc-target]{scroll-margin-top:84px}
+.toc{position:fixed;right:16px;bottom:calc(16px + env(safe-area-inset-bottom,0px));z-index:30;display:flex;flex-direction:column;align-items:flex-end;gap:8px;font-family:'Hanken Grotesk',system-ui,sans-serif}
+.tocbtn{min-height:44px;padding:0 16px 0 14px;border-radius:999px;border:1px solid var(--dark);background:var(--dark);color:var(--onDark);font:600 14px 'Hanken Grotesk',sans-serif;cursor:pointer;display:inline-flex;align-items:center;gap:8px;box-shadow:0 8px 22px rgba(0,0,0,.22)}
+.tocbtn:hover{background:var(--brandInk);border-color:var(--brandInk)}
+.toc.open .tocbtn{background:var(--accent);border-color:var(--accent);color:#fff}
+.toclist{display:none;list-style:none;margin:0;padding:8px;width:min(260px,calc(100vw - 32px));max-height:min(60vh,520px);overflow:auto;background:var(--card);border:1px solid var(--rule);border-radius:18px;box-shadow:0 14px 34px rgba(0,0,0,.18)}
+.toc.open .toclist{display:block}
+.toclist li{margin:0;padding:0}
+.toclist a{display:flex;align-items:baseline;gap:10px;padding:8px 10px;border-radius:10px;color:var(--muted);text-decoration:none;font-size:14px;line-height:1.3;font-weight:500}
+.toclist a:hover{color:var(--ink);background:var(--tile)}
+.toclist a .n{flex:none;width:20px;font-size:12px;font-weight:700;color:var(--faint);font-variant-numeric:tabular-nums;text-align:center}
+.toclist li.on a{color:var(--ink);background:var(--tile);font-weight:600}
+.toclist li.on a .n{color:var(--accent)}
+@media (min-width:1440px){
+.toc{top:50%;bottom:auto;transform:translateY(-50%);width:176px;align-items:stretch}
+.tocbtn{display:none}
+.toclist{display:block;width:auto;max-height:none;box-shadow:none;padding:6px}
+.toclist a{font-size:13px;padding:7px 8px}
+}
+@media (max-width:760px){[data-toc-target]{scroll-margin-top:12px}.toc{right:12px}.tocbtn{min-height:40px;font-size:13px;padding:0 14px 0 12px}}
+@media print{html{scroll-behavior:auto}.toc{display:none !important}}
