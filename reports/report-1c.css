@@ -275,7 +275,7 @@ body.internal .editme{outline:none !important;background:none !important}
 /* Floating table of contents (2026-10-06): button + popover under 1440px, open rail at ≥1440px. Hidden in print via .noprint. */
 html{scroll-behavior:smooth}
 [data-toc-target]{scroll-margin-top:84px}
-.toc{position:fixed;right:16px;bottom:calc(16px + env(safe-area-inset-bottom,0px));z-index:30;display:flex;flex-direction:column;align-items:flex-end;gap:8px;font-family:'Hanken Grotesk',system-ui,sans-serif}
+.toc{position:fixed;right:16px;bottom:calc(16px + env(safe-area-inset-bottom,0px));z-index:30;display:flex;flex-direction:column-reverse;align-items:flex-end;gap:8px;font-family:'Hanken Grotesk',system-ui,sans-serif}
 .tocbtn{min-height:44px;padding:0 16px 0 14px;border-radius:999px;border:1px solid var(--dark);background:var(--dark);color:var(--onDark);font:600 14px 'Hanken Grotesk',sans-serif;cursor:pointer;display:inline-flex;align-items:center;gap:8px;box-shadow:0 8px 22px rgba(0,0,0,.22)}
 .tocbtn:hover{background:var(--brandInk);border-color:var(--brandInk)}
 .toc.open .tocbtn{background:var(--accent);border-color:var(--accent);color:#fff}
