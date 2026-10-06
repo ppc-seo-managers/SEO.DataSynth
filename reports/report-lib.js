@@ -65,8 +65,8 @@ var items=[];
 function add(el,label,num,id){ if(!el) return; if(!el.id) el.id=id; el.setAttribute('data-toc-target',''); items.push({el:el,label:label,num:num}); }
 document.querySelectorAll('.wrap section').forEach(function(s){
 if(s.classList.contains('hero')) return add(s,'Overview','','sec-hero');
-if(s.querySelector('.hltitle')) return add(s,'Highlights','','sec-highlights');
 if(s.classList.contains('next')) return add(s,'Next steps','','sec-next');
+if(s.querySelector('.hltitle')) return add(s,'Highlights','','sec-highlights');
 var t=s.querySelector('.sectitle'); if(!t) return;
 var p=s.querySelector('.sechead .pill'), m=p&&p.textContent.match(/^\s*(\d{2})/);
 add(s,t.textContent.trim(),m?m[1]:'','sec-'+(s.getAttribute('data-mod')||items.length));
