@@ -1,0 +1,9 @@
+/* Muthos Media — brand tokens generated 2026-10-19 from reports/seo-partner-reports/brands/brands.json. Do not hand-edit; edit the JSON and run build.py. */
+:root{
+  --brand-primary:#434343;--brand-secondary:#ffffff;--brand-action:#c9a227;
+  --brand-font-heading:"Montserrat",system-ui,sans-serif;--brand-font-body:"Lora",system-ui,sans-serif;--brand-font-heading-weight:300;
+  --brand-logo:url("https://seo.datasynth.solutions/reports/brands/muthos/muthos-logo.webp");
+  /* report-1c.css aliases */
+  --brand:#434343;--brandInk:#242424;--accent:#ab8a21;--highlight:#ede5ce;
+}
+html[data-theme="dark"]{--brand:#a8a8a8;--brandInk:#bcbcbc;--accent:#e0c05d;--highlight:#53461c;}

@@ -1,0 +1,9 @@
+/* Consult Beaute — brand tokens generated 2026-10-19 from reports/seo-partner-reports/brands/brands.json. Do not hand-edit; edit the JSON and run build.py. */
+:root{
+  --brand-primary:#108474;--brand-secondary:#fdf7ef;--brand-action:#e35d5d;
+  --brand-font-heading:"Poppins",system-ui,sans-serif;--brand-font-body:"Work Sans",system-ui,sans-serif;--brand-font-heading-weight:600;
+  --brand-logo:url("https://seo.datasynth.solutions/reports/consult-beaute/consult-logo.webp");
+  /* report-1c.css aliases */
+  --brand:#108474;--brandInk:#094d44;--accent:#e35d5d;--highlight:#cae4e0;
+}
+html[data-theme="dark"]{--brand:#64ecda;--brandInk:#88f0e3;--accent:#e35d5d;--highlight:#133b37;}

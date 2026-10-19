@@ -1,0 +1,9 @@
+/* SilverBack Advertising — brand tokens generated 2026-10-19 from reports/seo-partner-reports/brands/brands.json. Do not hand-edit; edit the JSON and run build.py. */
+:root{
+  --brand-primary:#4f6688;--brand-secondary:#2d4262;--brand-action:#eb7e57;
+  --brand-font-heading:"Lato",system-ui,sans-serif;--brand-font-body:"Lato",system-ui,sans-serif;--brand-font-heading-weight:700;
+  --brand-logo:url("https://seo.datasynth.solutions/reports/brands/silverback/silverback-logo.svg");
+  /* report-1c.css aliases */
+  --brand:#4f6688;--brandInk:#394961;--accent:#eb7e57;--highlight:#d8dde5;
+}
+html[data-theme="dark"]{--brand:#91a4bf;--brandInk:#abb9ce;--accent:#eb7e57;--highlight:#29313e;}

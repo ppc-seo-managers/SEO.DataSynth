@@ -1,0 +1,9 @@
+/* John Waters Inc. — brand tokens generated 2026-10-19 from reports/seo-partner-reports/brands/brands.json. Do not hand-edit; edit the JSON and run build.py. */
+:root{
+  --brand-primary:#bb9b6a;--brand-secondary:#1a1a1a;--brand-action:#a51126;
+  --brand-font-heading:"Open Sans",system-ui,sans-serif;--brand-font-body:"Open Sans",system-ui,sans-serif;--brand-font-heading-weight:700;
+  --brand-logo:url("https://seo.datasynth.solutions/reports/e502/jw/jw-logo.webp");
+  /* report-1c.css aliases */
+  --brand:#1a1a1a;--brandInk:#141414;--accent:#a51126;--highlight:#f0e9de;
+}
+html[data-theme="dark"]{--brand:#a8a8a8;--brandInk:#bcbcbc;--accent:#ed4f66;--highlight:#4e4333;}

@@ -1,0 +1,9 @@
+/* ActionPac — brand tokens generated 2026-10-19 from reports/seo-partner-reports/brands/brands.json. Do not hand-edit; edit the JSON and run build.py. */
+:root{
+  --brand-primary:#2b7b3c;--brand-secondary:#111111;--brand-action:#e07b00;
+  --brand-font-heading:"Inter",system-ui,sans-serif;--brand-font-body:"Inter",system-ui,sans-serif;--brand-font-heading-weight:700;
+  --brand-logo:url("https://seo.datasynth.solutions/reports/actionpac/actionpac-logo.webp");
+  /* report-1c.css aliases */
+  --brand:#2b7b3c;--brandInk:#1b4e26;--accent:#e07b00;--highlight:#d0e2d4;
+}
+html[data-theme="dark"]{--brand:#7fd290;--brandInk:#9dddaa;--accent:#ffa83d;--highlight:#1c3823;}

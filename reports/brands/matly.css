@@ -1,0 +1,9 @@
+/* Matly Digital Solutions — brand tokens generated 2026-10-19 from reports/seo-partner-reports/brands/brands.json. Do not hand-edit; edit the JSON and run build.py. */
+:root{
+  --brand-primary:#e81d2d;--brand-secondary:#1a1a1a;--brand-action:#03a7f2;
+  --brand-font-heading:"Lato",system-ui,sans-serif;--brand-font-body:"Lato",system-ui,sans-serif;--brand-font-heading-weight:700;
+  --brand-logo:url("https://seo.datasynth.solutions/reports/e502/matly/matly-logo.webp");
+  /* report-1c.css aliases */
+  --brand:#e81d2d;--brandInk:#b5121f;--accent:#03a7f2;--highlight:#facdd1;
+}
+html[data-theme="dark"]{--brand:#ef626d;--brandInk:#f3878f;--accent:#40c1fd;--highlight:#5e171e;}

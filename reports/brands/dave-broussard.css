@@ -1,0 +1,9 @@
+/* Dave Broussard A/C, Heating & Electrical — brand tokens generated 2026-10-19 from reports/seo-partner-reports/brands/brands.json. Do not hand-edit; edit the JSON and run build.py. */
+:root{
+  --brand-primary:#055eb8;--brand-secondary:#0d2236;--brand-action:#ae2424;
+  --brand-font-heading:"Russo One",system-ui,sans-serif;--brand-font-body:"Kanit",system-ui,sans-serif;--brand-font-heading-weight:400;
+  --brand-logo:url("https://seo.datasynth.solutions/reports/brant/broussard/broussard-logo.webp");
+  /* report-1c.css aliases */
+  --brand:#055eb8;--brandInk:#03407c;--accent:#ae2424;--highlight:#c8dcef;
+}
+html[data-theme="dark"]{--brand:#56a8fa;--brandInk:#7ebcfb;--accent:#de5e5e;--highlight:#0f2e4f;}

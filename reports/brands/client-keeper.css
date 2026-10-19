@@ -1,0 +1,9 @@
+/* Client Keeper — brand tokens generated 2026-10-19 from reports/seo-partner-reports/brands/brands.json. Do not hand-edit; edit the JSON and run build.py. */
+:root{
+  --brand-primary:#152164;--brand-secondary:#3858e9;--brand-action:#5098d0;
+  --brand-font-heading:"Poppins",system-ui,sans-serif;--brand-font-body:"Poppins",system-ui,sans-serif;--brand-font-heading-weight:600;
+  --brand-logo:url("https://seo.datasynth.solutions/reports/brands/client-keeper/client-keeper-mark.webp");
+  /* report-1c.css aliases */
+  --brand:#152164;--brandInk:#0a1031;--accent:#5098d0;--highlight:#cccedd;
+}
+html[data-theme="dark"]{--brand:#7081e1;--brandInk:#929fe8;--accent:#66a5d6;--highlight:#141931;}

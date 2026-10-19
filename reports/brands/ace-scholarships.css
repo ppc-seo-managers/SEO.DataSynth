@@ -1,0 +1,9 @@
+/* ACE Scholarships — brand tokens generated 2026-10-19 from reports/seo-partner-reports/brands/brands.json. Do not hand-edit; edit the JSON and run build.py. */
+:root{
+  --brand-primary:#fec00f;--brand-secondary:#253338;--brand-action:#f79835;
+  --brand-font-heading:"bryant-web","Nunito",system-ui,sans-serif;--brand-font-body:"bryant-web","Nunito",system-ui,sans-serif;--brand-font-heading-weight:700;
+  --brand-logo:url("https://seo.datasynth.solutions/reports/brands/ace-scholarships/ace-logo.webp");
+  /* report-1c.css aliases */
+  --brand:#253338;--brandInk:#101619;--accent:#c46808;--highlight:#fff1ca;
+}
+html[data-theme="dark"]{--brand:#93b3be;--brandInk:#acc5cd;--accent:#f8a045;--highlight:#665014;}

@@ -1,0 +1,9 @@
+/* HK Surgical — brand tokens generated 2026-10-19 from reports/seo-partner-reports/brands/brands.json. Do not hand-edit; edit the JSON and run build.py. */
+:root{
+  --brand-primary:#109a9d;--brand-secondary:#e2f2f3;--brand-action:#e8702a;
+  --brand-font-heading:"Urbanist",system-ui,sans-serif;--brand-font-body:"Urbanist",system-ui,sans-serif;--brand-font-heading-weight:600;
+  --brand-logo:url("https://seo.datasynth.solutions/reports/hk/hk-logo.webp");
+  /* report-1c.css aliases */
+  --brand:#0e888b;--brandInk:#085253;--accent:#e8702a;--highlight:#cae9e9;
+}
+html[data-theme="dark"]{--brand:#61ecef;--brandInk:#86f0f3;--accent:#ec8a50;--highlight:#134345;}

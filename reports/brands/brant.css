@@ -1,0 +1,9 @@
+/* Brant Media Group — brand tokens generated 2026-10-19 from reports/seo-partner-reports/brands/brands.json. Do not hand-edit; edit the JSON and run build.py. */
+:root{
+  --brand-primary:#f16824;--brand-secondary:#111111;--brand-action:#e95614;
+  --brand-font-heading:"Teko",system-ui,sans-serif;--brand-font-body:"Poppins",system-ui,sans-serif;--brand-font-heading-weight:500;
+  --brand-logo:url("https://seo.datasynth.solutions/reports/brands/brant/brant-logo.webp");
+  /* report-1c.css aliases */
+  --brand:#111111;--brandInk:#141414;--accent:#e95614;--highlight:#fcdecf;
+}
+html[data-theme="dark"]{--brand:#a8a8a8;--brandInk:#bcbcbc;--accent:#f07f4d;--highlight:#61311b;}

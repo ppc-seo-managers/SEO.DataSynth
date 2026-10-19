@@ -1,0 +1,9 @@
+/* The Lincoln Jamboree — brand tokens generated 2026-10-19 from reports/seo-partner-reports/brands/brands.json. Do not hand-edit; edit the JSON and run build.py. */
+:root{
+  --brand-primary:#1f4f36;--brand-secondary:#f5ebda;--brand-action:#be1e2d;
+  --brand-font-heading:"Impact","Anton",system-ui,sans-serif;--brand-font-body:"Inter",system-ui,sans-serif;--brand-font-heading-weight:400;
+  --brand-logo:url("https://seo.datasynth.solutions/reports/muthos/lincoln/lincoln-logo-white.webp");
+  /* report-1c.css aliases */
+  --brand:#1f4f36;--brandInk:#0e2318;--accent:#be1e2d;--highlight:#ced8d3;
+}
+html[data-theme="dark"]{--brand:#82cea7;--brandInk:#9fd9bc;--accent:#e55865;--highlight:#182921;}

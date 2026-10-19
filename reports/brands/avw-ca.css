@@ -1,0 +1,9 @@
+/* American Vision Windows — brand tokens generated 2026-10-19 from reports/seo-partner-reports/brands/brands.json. Do not hand-edit; edit the JSON and run build.py. */
+:root{
+  --brand-primary:#1d6198;--brand-secondary:#11274b;--brand-action:#8dbd57;
+  --brand-font-heading:"Lato",system-ui,sans-serif;--brand-font-body:"Roboto",system-ui,sans-serif;--brand-font-heading-weight:700;
+  --brand-logo:url("https://seo.datasynth.solutions/reports/5mm/avw/avw-logo.webp");
+  /* report-1c.css aliases */
+  --brand:#1d6198;--brandInk:#134065;--accent:#69923a;--highlight:#cddce8;
+}
+html[data-theme="dark"]{--brand:#6dafe3;--brandInk:#8fc2ea;--accent:#a1c874;--highlight:#172f44;}

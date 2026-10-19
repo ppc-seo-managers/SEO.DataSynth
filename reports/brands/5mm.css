@@ -1,0 +1,9 @@
+/* 5 Mile Media — brand tokens generated 2026-10-19 from reports/seo-partner-reports/brands/brands.json. Do not hand-edit; edit the JSON and run build.py. */
+:root{
+  --brand-primary:#de212b;--brand-secondary:#614b8b;--brand-action:#ffea43;
+  --brand-font-heading:"Lato",system-ui,sans-serif;--brand-font-body:"Lato",system-ui,sans-serif;--brand-font-heading-weight:900;
+  --brand-logo:url("https://seo.datasynth.solutions/reports/5mm/5mm-logo.webp");
+  /* report-1c.css aliases */
+  --brand:#de212b;--brandInk:#a91921;--accent:#ccb500;--highlight:#f8ced0;
+}
+html[data-theme="dark"]{--brand:#e9686f;--brandInk:#ee8c91;--accent:#ffea43;--highlight:#5b191d;}

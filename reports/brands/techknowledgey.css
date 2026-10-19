@@ -1,0 +1,9 @@
+/* TechKnowledgey, Inc. — brand tokens generated 2026-10-19 from reports/seo-partner-reports/brands/brands.json. Do not hand-edit; edit the JSON and run build.py. */
+:root{
+  --brand-primary:#ff9100;--brand-secondary:#1f2933;--brand-action:#3633e1;
+  --brand-font-heading:"Inter",system-ui,sans-serif;--brand-font-body:"Karla",system-ui,sans-serif;--brand-font-heading-weight:700;
+  --brand-logo:url("https://seo.datasynth.solutions/reports/techknowledgey/tk-logo.webp");
+  /* report-1c.css aliases */
+  --brand:#1f2933;--brandInk:#0f1419;--accent:#3633e1;--highlight:#ffe7c7;
+}
+html[data-theme="dark"]{--brand:#93a8be;--brandInk:#acbdcd;--accent:#5956e6;--highlight:#66400e;}

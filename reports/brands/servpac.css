@@ -1,0 +1,9 @@
+/* Servpac — brand tokens generated 2026-10-19 from reports/seo-partner-reports/brands/brands.json. Do not hand-edit; edit the JSON and run build.py. */
+:root{
+  --brand-primary:#0b98fc;--brand-secondary:#003399;--brand-action:#f30f3b;
+  --brand-font-heading:"Montserrat",system-ui,sans-serif;--brand-font-body:"Nunito",system-ui,sans-serif;--brand-font-heading-weight:700;
+  --brand-logo:url("https://seo.datasynth.solutions/reports/e502/servpac/servpac-logo.webp");
+  /* report-1c.css aliases */
+  --brand:#003399;--brandInk:#001f5c;--accent:#f30f3b;--highlight:#c9e8fe;
+}
+html[data-theme="dark"]{--brand:#528bff;--brandInk:#7ba6ff;--accent:#f64668;--highlight:#114266;}

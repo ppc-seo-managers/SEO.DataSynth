@@ -1,0 +1,9 @@
+/* Ecola Termite & Pest Control — brand tokens generated 2026-10-19 from reports/seo-partner-reports/brands/brands.json. Do not hand-edit; edit the JSON and run build.py. */
+:root{
+  --brand-primary:#25408a;--brand-secondary:#24c0e0;--brand-action:#f05b22;
+  --brand-font-heading:"Lato",system-ui,sans-serif;--brand-font-body:"Lato",system-ui,sans-serif;--brand-font-heading-weight:900;
+  --brand-logo:url("https://seo.datasynth.solutions/reports/5mm/ecola/ecola-logo.webp");
+  /* report-1c.css aliases */
+  --brand:#25408a;--brandInk:#182a5a;--accent:#f05b22;--highlight:#cfd5e5;
+}
+html[data-theme="dark"]{--brand:#7691da;--brandInk:#96abe3;--accent:#f3784a;--highlight:#1a233f;}

@@ -1,0 +1,9 @@
+/* Element 502 — brand tokens generated 2026-10-19 from reports/seo-partner-reports/brands/brands.json. Do not hand-edit; edit the JSON and run build.py. */
+:root{
+  --brand-primary:#236192;--brand-secondary:#1a1a1a;--brand-action:#84bd00;
+  --brand-font-heading:"Montserrat",system-ui,sans-serif;--brand-font-body:"Open Sans",system-ui,sans-serif;--brand-font-heading-weight:700;
+  --brand-logo:url("https://seo.datasynth.solutions/reports/e502/e502-logo.webp");
+  /* report-1c.css aliases */
+  --brand:#236192;--brandInk:#174061;--accent:#8ecc00;--highlight:#cfdce7;
+}
+html[data-theme="dark"]{--brand:#73afdd;--brandInk:#94c2e5;--accent:#c5ff3d;--highlight:#192f41;}

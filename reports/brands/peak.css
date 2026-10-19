@@ -1,0 +1,9 @@
+/* Peak Industrial Coatings — brand tokens generated 2026-10-19 from reports/seo-partner-reports/brands/brands.json. Do not hand-edit; edit the JSON and run build.py. */
+:root{
+  --brand-primary:#37562d;--brand-secondary:#1f2933;--brand-action:#f79400;
+  --brand-font-heading:"Oswald",system-ui,sans-serif;--brand-font-body:"Source Sans 3",system-ui,sans-serif;--brand-font-heading-weight:600;
+  --brand-logo:url("https://seo.datasynth.solutions/reports/brands/peak/peak-logo.webp");
+  /* report-1c.css aliases */
+  --brand:#37562d;--brandInk:#1d2e18;--accent:#cc7a00;--highlight:#d3dad1;
+}
+html[data-theme="dark"]{--brand:#9ac38d;--brandInk:#b2d1a8;--accent:#ffb13d;--highlight:#202b1e;}

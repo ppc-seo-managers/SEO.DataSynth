@@ -1,0 +1,9 @@
+/* Paravel Insights — brand tokens generated 2026-10-19 from reports/seo-partner-reports/brands/brands.json. Do not hand-edit; edit the JSON and run build.py. */
+:root{
+  --brand-primary:#131210;--brand-secondary:#e2dac7;--brand-action:#b08d57;
+  --brand-font-heading:"Faculty Glyphic",system-ui,sans-serif;--brand-font-body:"Archivo",system-ui,sans-serif;--brand-font-heading-weight:400;
+  --brand-logo:url("https://seo.datasynth.solutions/reports/brands/paravel/paravel-logo.webp");
+  /* report-1c.css aliases */
+  --brand:#131210;--brandInk:#161513;--accent:#b08d57;--highlight:#eee6da;
+}
+html[data-theme="dark"]{--brand:#b0aba1;--brandInk:#c3bfb7;--accent:#c1a67b;--highlight:#4b3e2d;}

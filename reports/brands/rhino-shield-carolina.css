@@ -1,0 +1,9 @@
+/* Rhino Shield Carolina — brand tokens generated 2026-10-19 from reports/seo-partner-reports/brands/brands.json. Do not hand-edit; edit the JSON and run build.py. */
+:root{
+  --brand-primary:#355caa;--brand-secondary:#414042;--brand-action:#fff266;
+  --brand-font-heading:"Poster Gothic ATF Heavy","Oswald",system-ui,sans-serif;--brand-font-body:"Visby","Nunito Sans",system-ui,sans-serif;--brand-font-heading-weight:600;
+  --brand-logo:url("https://seo.datasynth.solutions/reports/silverback/rhino/rhino-logo.webp");
+  /* report-1c.css aliases */
+  --brand:#355caa;--brandInk:#26437b;--accent:#e6c93f;--highlight:#d3dbec;
+}
+html[data-theme="dark"]{--brand:#7b99d6;--brandInk:#9ab1e0;--accent:#fff266;--highlight:#202d4a;}

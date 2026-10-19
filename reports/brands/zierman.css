@@ -1,0 +1,9 @@
+/* Zierman Plumbing & Heating — brand tokens generated 2026-10-19 from reports/seo-partner-reports/brands/brands.json. Do not hand-edit; edit the JSON and run build.py. */
+:root{
+  --brand-primary:#d05738;--brand-secondary:#28282b;--brand-action:#c5342d;
+  --brand-font-heading:"Plus Jakarta Sans",system-ui,sans-serif;--brand-font-body:"Roboto",system-ui,sans-serif;--brand-font-heading-weight:700;
+  --brand-logo:url("https://seo.datasynth.solutions/reports/zierman/zierman-logo.webp");
+  /* report-1c.css aliases */
+  --brand:#d05738;--brandInk:#a44027;--accent:#c5342d;--highlight:#f5dad3;
+}
+html[data-theme="dark"]{--brand:#de8973;--brandInk:#e6a594;--accent:#db6761;--highlight:#562b22;}

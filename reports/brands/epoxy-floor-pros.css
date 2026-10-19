@@ -1,0 +1,9 @@
+/* Epoxy Floor Pros — brand tokens generated 2026-10-19 from reports/seo-partner-reports/brands/brands.json. Do not hand-edit; edit the JSON and run build.py. */
+:root{
+  --brand-primary:#e6332e;--brand-secondary:#0e182c;--brand-action:#fbcc17;
+  --brand-font-heading:"Roboto",system-ui,sans-serif;--brand-font-body:"Source Sans 3",system-ui,sans-serif;--brand-font-heading-weight:700;
+  --brand-logo:url("https://seo.datasynth.solutions/reports/ck/epoxy/epoxy-logo.webp");
+  /* report-1c.css aliases */
+  --brand:#e6332e;--brandInk:#c01c17;--accent:#c9a003;--highlight:#fad2d1;
+}
+html[data-theme="dark"]{--brand:#ec6864;--brandInk:#f08b88;--accent:#fcd540;--highlight:#5e1f1e;}

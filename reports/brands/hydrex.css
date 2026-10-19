@@ -1,0 +1,9 @@
+/* Hydrex Termite & Pest Control — brand tokens generated 2026-10-19 from reports/seo-partner-reports/brands/brands.json. Do not hand-edit; edit the JSON and run build.py. */
+:root{
+  --brand-primary:#b92028;--brand-secondary:#326796;--brand-action:#f0261a;
+  --brand-font-heading:"Oswald",system-ui,sans-serif;--brand-font-body:"Overpass",system-ui,sans-serif;--brand-font-heading-weight:400;
+  --brand-logo:url("https://seo.datasynth.solutions/reports/brands/hydrex/hydrex-logo.webp");
+  /* report-1c.css aliases */
+  --brand:#b92028;--brandInk:#85171d;--accent:#f0261a;--highlight:#f0ced0;
+}
+html[data-theme="dark"]{--brand:#e56b72;--brandInk:#eb8e93;--accent:#f35349;--highlight:#4e181c;}

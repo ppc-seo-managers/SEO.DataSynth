@@ -1,0 +1,9 @@
+/* Priority Tradelines — brand tokens generated 2026-10-19 from reports/seo-partner-reports/brands/brands.json. Do not hand-edit; edit the JSON and run build.py. */
+:root{
+  --brand-primary:#060f48;--brand-secondary:#5fc7f2;--brand-action:#1ea7e1;
+  --brand-font-heading:"Mona Sans",system-ui,sans-serif;--brand-font-body:"Poppins",system-ui,sans-serif;--brand-font-heading-weight:700;
+  --brand-logo:url("https://seo.datasynth.solutions/reports/volare/pt/pt-logo.webp");
+  /* report-1c.css aliases */
+  --brand:#060f48;--brandInk:#030826;--accent:#1ea7e1;--highlight:#c8cad7;
+}
+html[data-theme="dark"]{--brand:#5f73f2;--brandInk:#8594f5;--accent:#54bce8;--highlight:#0f1228;}
