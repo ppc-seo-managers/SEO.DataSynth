@@ -4,6 +4,6 @@
   --brand-font-heading:"Oswald",system-ui,sans-serif;--brand-font-body:"Source Sans 3",system-ui,sans-serif;--brand-font-heading-weight:600;
   --brand-logo:url("https://seo.datasynth.solutions/reports/brands/peak/peak-logo.webp");
   /* report-1c.css aliases */
-  --brand:#37562d;--brandInk:#1d2e18;--accent:#cc7a00;--highlight:#d3dad1;
+  --brand:#37562d;--brandInk:#1d2e18;--accent:#ff9900;--highlight:#d3dad1;
 }
-html[data-theme="dark"]{--brand:#9ac38d;--brandInk:#b2d1a8;--accent:#ffb13d;--highlight:#202b1e;}
+[data-theme="dark"]{--brand:#9ac38d;--brandInk:#b2d1a8;--accent:#ffb13d;--highlight:#202b1e;}

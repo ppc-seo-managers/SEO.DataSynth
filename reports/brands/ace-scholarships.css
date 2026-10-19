@@ -4,6 +4,6 @@
   --brand-font-heading:"bryant-web","Nunito",system-ui,sans-serif;--brand-font-body:"bryant-web","Nunito",system-ui,sans-serif;--brand-font-heading-weight:700;
   --brand-logo:url("https://seo.datasynth.solutions/reports/brands/ace-scholarships/ace-logo.webp");
   /* report-1c.css aliases */
-  --brand:#253338;--brandInk:#101619;--accent:#c46808;--highlight:#fff1ca;
+  --brand:#253338;--brandInk:#101619;--accent:#f5820a;--highlight:#fff1ca;
 }
-html[data-theme="dark"]{--brand:#93b3be;--brandInk:#acc5cd;--accent:#f8a045;--highlight:#665014;}
+[data-theme="dark"]{--brand:#93b3be;--brandInk:#acc5cd;--accent:#f8a045;--highlight:#665014;}

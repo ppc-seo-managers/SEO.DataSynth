@@ -4,6 +4,6 @@
   --brand-font-heading:"Montserrat",system-ui,sans-serif;--brand-font-body:"Lora",system-ui,sans-serif;--brand-font-heading-weight:300;
   --brand-logo:url("https://seo.datasynth.solutions/reports/brands/muthos/muthos-logo.webp");
   /* report-1c.css aliases */
-  --brand:#434343;--brandInk:#242424;--accent:#ab8a21;--highlight:#ede5ce;
+  --brand:#434343;--brandInk:#242424;--accent:#d6ac29;--highlight:#f6edd0;
 }
-html[data-theme="dark"]{--brand:#a8a8a8;--brandInk:#bcbcbc;--accent:#e0c05d;--highlight:#53461c;}
+[data-theme="dark"]{--brand:#a8a8a8;--brandInk:#bcbcbc;--accent:#e0c05d;--highlight:#53461c;}

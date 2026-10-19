@@ -4,6 +4,6 @@
   --brand-font-heading:"Montserrat",system-ui,sans-serif;--brand-font-body:"Open Sans",system-ui,sans-serif;--brand-font-heading-weight:700;
   --brand-logo:url("https://seo.datasynth.solutions/reports/e502/e502-logo.webp");
   /* report-1c.css aliases */
-  --brand:#236192;--brandInk:#174061;--accent:#8ecc00;--highlight:#cfdce7;
+  --brand:#236192;--brandInk:#174061;--accent:#b2ff00;--highlight:#cfdce7;
 }
-html[data-theme="dark"]{--brand:#73afdd;--brandInk:#94c2e5;--accent:#c5ff3d;--highlight:#192f41;}
+[data-theme="dark"]{--brand:#73afdd;--brandInk:#94c2e5;--accent:#c5ff3d;--highlight:#192f41;}

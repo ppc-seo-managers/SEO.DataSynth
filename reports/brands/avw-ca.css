@@ -4,6 +4,6 @@
   --brand-font-heading:"Lato",system-ui,sans-serif;--brand-font-body:"Roboto",system-ui,sans-serif;--brand-font-heading-weight:700;
   --brand-logo:url("https://seo.datasynth.solutions/reports/5mm/avw/avw-logo.webp");
   /* report-1c.css aliases */
-  --brand:#1d6198;--brandInk:#134065;--accent:#69923a;--highlight:#cddce8;
+  --brand:#1d6198;--brandInk:#134065;--accent:#83b748;--highlight:#cddce8;
 }
-html[data-theme="dark"]{--brand:#6dafe3;--brandInk:#8fc2ea;--accent:#a1c874;--highlight:#172f44;}
+[data-theme="dark"]{--brand:#6dafe3;--brandInk:#8fc2ea;--accent:#a1c874;--highlight:#172f44;}

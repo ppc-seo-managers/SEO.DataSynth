@@ -4,6 +4,6 @@
   --brand-font-heading:"Lato",system-ui,sans-serif;--brand-font-body:"Lato",system-ui,sans-serif;--brand-font-heading-weight:900;
   --brand-logo:url("https://seo.datasynth.solutions/reports/5mm/5mm-logo.webp");
   /* report-1c.css aliases */
-  --brand:#de212b;--brandInk:#a91921;--accent:#ccb500;--highlight:#f8ced0;
+  --brand:#de212b;--brandInk:#a91921;--accent:#ffe300;--highlight:#f8ced0;
 }
-html[data-theme="dark"]{--brand:#e9686f;--brandInk:#ee8c91;--accent:#ffea43;--highlight:#5b191d;}
+[data-theme="dark"]{--brand:#e9686f;--brandInk:#ee8c91;--accent:#ffea43;--highlight:#5b191d;}

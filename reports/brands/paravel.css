@@ -6,4 +6,4 @@
   /* report-1c.css aliases */
   --brand:#131210;--brandInk:#161513;--accent:#b08d57;--highlight:#eee6da;
 }
-html[data-theme="dark"]{--brand:#b0aba1;--brandInk:#c3bfb7;--accent:#c1a67b;--highlight:#4b3e2d;}
+[data-theme="dark"]{--brand:#b0aba1;--brandInk:#c3bfb7;--accent:#c1a67b;--highlight:#4b3e2d;}
