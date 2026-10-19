@@ -4,6 +4,6 @@
   --brand-font-heading:"Roboto",system-ui,sans-serif;--brand-font-body:"Source Sans 3",system-ui,sans-serif;--brand-font-heading-weight:700;
   --brand-logo:url("https://seo.datasynth.solutions/reports/ck/epoxy/epoxy-logo.webp");
   /* report-1c.css aliases */
-  --brand:#e6332e;--brandInk:#c01c17;--accent:#fbc804;--highlight:#fad2d1;
+  --brand:#e6332e;--brandInk:#c01c17;--accent:#d9a900;--highlight:#fad2d1;
 }
 [data-theme="dark"]{--brand:#ec6864;--brandInk:#f08b88;--accent:#fcd540;--highlight:#5e1f1e;}

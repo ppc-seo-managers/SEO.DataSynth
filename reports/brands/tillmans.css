@@ -4,6 +4,6 @@
   --brand-font-heading:"Oswald",system-ui,sans-serif;--brand-font-body:"Jost",system-ui,sans-serif;--brand-font-heading-weight:600;
   --brand-logo:url("https://seo.datasynth.solutions/reports/brant/tillmans/tillmans-logo.webp");
   /* report-1c.css aliases */
-  --brand:#07295f;--brandInk:#031026;--accent:#f8bf07;--highlight:#c8d0dc;
+  --brand:#07295f;--brandInk:#031026;--accent:#d6a300;--highlight:#c8d0dc;
 }
 [data-theme="dark"]{--brand:#5e97f3;--brandInk:#84b0f6;--accent:#face43;--highlight:#0f1b30;}

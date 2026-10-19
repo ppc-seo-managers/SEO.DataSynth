@@ -4,6 +4,6 @@
   --brand-font-heading:"DM Sans",system-ui,sans-serif;--brand-font-body:"PT Serif",system-ui,sans-serif;--brand-font-heading-weight:700;
   --brand-logo:url("https://seo.datasynth.solutions/reports/volare/volare-logo.webp");
   /* report-1c.css aliases */
-  --brand:#2c2c2c;--brandInk:#141414;--accent:#ff3d00;--highlight:#ffd4c7;
+  --brand:#2c2c2c;--brandInk:#141414;--accent:#e8603a;--highlight:#fadcd4;
 }
 [data-theme="dark"]{--brand:#a8a8a8;--brandInk:#bcbcbc;--accent:#ff845d;--highlight:#663b2f;}
