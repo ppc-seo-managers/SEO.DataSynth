@@ -1,0 +1,9 @@
+/* CMK Construction — brand tokens generated 2026-10-20 from reports/seo-partner-reports/brands/brands.json. Do not hand-edit; edit the JSON and run build.py. */
+:root{
+  --brand-primary:#1a3a5c;--brand-secondary:#c97535;--brand-action:#e88f00;
+  --brand-font-heading:"Montserrat",system-ui,sans-serif;--brand-font-body:"Inter",system-ui,sans-serif;--brand-font-heading-weight:700;
+  --brand-logo:url("https://seo.datasynth.solutions/reports/brands/cmk/cmk-logo.webp");
+  /* report-1c.css aliases */
+  --brand:#1a3a5c;--brandInk:#0d1c2c;--accent:#e88f00;--highlight:#cdd4db;
+}
+[data-theme="dark"]{--brand:#78a7d9;--brandInk:#98bce2;--accent:#ffb53d;--highlight:#16212e;}
