@@ -1,0 +1,10 @@
+/* DFH Company — brand tokens generated 2026-10-20 from reports/seo-partner-reports/brands/brands.json. Do not hand-edit; edit the JSON and run build.py. */
+:root{
+  --brand-primary:#34563d;--brand-secondary:#ccbe80;--brand-action:#b52305;
+  --brand-font-heading:"Outfit",system-ui,sans-serif;--brand-font-body:"DM Sans",system-ui,sans-serif;--brand-font-heading-weight:600;
+  --brand-logo:url("https://seo.datasynth.solutions/reports/brands/high10/dfh/dfh-badge-600.webp");
+  --brand-logo-light:url("https://seo.datasynth.solutions/reports/brands/high10/dfh/dfh-logo.webp");
+  /* report-1c.css aliases */
+  --brand:#34563d;--brandInk:#1d3022;--accent:#b52305;--highlight:#d2dad4;
+}
+[data-theme="dark"]{--brand:#93be9e;--brandInk:#accdb5;--accent:#fa6242;--highlight:#1f2b24;}
