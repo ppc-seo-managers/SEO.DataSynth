@@ -1,8 +1,9 @@
-/* Advirtis — brand tokens generated 2026-10-19 from reports/seo-partner-reports/brands/brands.json. Do not hand-edit; edit the JSON and run build.py. */
+/* Advirtis — brand tokens generated 2026-10-20 from reports/seo-partner-reports/brands/brands.json. Do not hand-edit; edit the JSON and run build.py. */
 :root{
   --brand-primary:#141416;--brand-secondary:#f3f1ec;--brand-action:#f80040;
   --brand-font-heading:"Anton",system-ui,sans-serif;--brand-font-body:"Barlow",system-ui,sans-serif;--brand-font-heading-weight:400;
   --brand-logo:url("https://seo.datasynth.solutions/reports/brands/advirtis/advirtis-logo.webp");
+  --brand-logo-light:url("https://seo.datasynth.solutions/reports/brands/advirtis/advirtis-logo-dark.webp");
   /* report-1c.css aliases */
   --brand:#141416;--brandInk:#131315;--accent:#f80040;--highlight:#fdc7d5;
 }
