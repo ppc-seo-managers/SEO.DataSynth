@@ -1,0 +1,10 @@
+/* FareHarbor — brand tokens generated 2026-10-28 from reports/seo-partner-reports/brands/brands.json. Do not hand-edit; edit the JSON and run build.py. */
+:root{
+  --brand-primary:#0a6ece;--brand-secondary:#ffc058;--brand-action:#ea6852;
+  --brand-font-heading:"Manrope",system-ui,sans-serif;--brand-font-body:"Manrope",system-ui,sans-serif;--brand-font-heading-weight:700;
+  --brand-logo:url("https://seo.datasynth.solutions/reports/brands/fareharbor/fareharbor-logo.svg");
+  --brand-logo-dark:url("https://seo.datasynth.solutions/reports/brands/fareharbor/fareharbor-logo-white.svg");
+  /* report-1c.css aliases */
+  --brand:#0a6ece;--brandInk:#074f94;--accent:#ea6852;--highlight:#c9dff4;
+}
+[data-theme="dark"]{--brand:#5aaaf7;--brandInk:#81bef9;--accent:#ea6852;--highlight:#103456;}

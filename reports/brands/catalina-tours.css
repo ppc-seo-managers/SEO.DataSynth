@@ -1,0 +1,9 @@
+/* Catalina Tours — brand tokens generated 2026-10-28 from reports/seo-partner-reports/brands/brands.json. Do not hand-edit; edit the JSON and run build.py. */
+:root{
+  --brand-primary:#114e8e;--brand-secondary:#2caae1;--brand-action:#f67d20;
+  --brand-font-heading:"Montserrat",system-ui,sans-serif;--brand-font-body:"Source Sans 3",system-ui,sans-serif;--brand-font-heading-weight:800;
+  --brand-logo:url("https://seo.datasynth.solutions/reports/brands/fareharbor/catalina-tours/catalina-tours-logo.webp");
+  /* report-1c.css aliases */
+  --brand:#114e8e;--brandInk:#0a3057;--accent:#f67d20;--highlight:#cbd8e6;
+}
+[data-theme="dark"]{--brand:#64a7ec;--brandInk:#88bcf0;--accent:#f79245;--highlight:#132840;}
