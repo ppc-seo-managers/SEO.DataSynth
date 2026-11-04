@@ -1,0 +1,9 @@
+/* Pure Medicine — brand tokens generated 2026-10-28 from reports/seo-partner-reports/brands/brands.json. Do not hand-edit; edit the JSON and run build.py. */
+:root{
+  --brand-primary:#0970b2;--brand-secondary:#232e47;--brand-action:#2ebb7c;
+  --brand-font-heading:"Open Sans",system-ui,sans-serif;--brand-font-body:"Open Sans",system-ui,sans-serif;--brand-font-heading-weight:700;
+  --brand-logo:url("https://seo.datasynth.solutions/reports/brands/forefront/pure-medicine/pure-medicine-logo.webp");
+  /* report-1c.css aliases */
+  --brand:#0970b2;--brandInk:#064b78;--accent:#1f8a5a;--highlight:#c9e0ee;
+}
+[data-theme="dark"]{--brand:#5ab9f7;--brandInk:#81caf9;--accent:#63d9a4;--highlight:#10344d;}
